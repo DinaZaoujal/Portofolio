@@ -12,7 +12,9 @@ window.VERTALINGEN = {
       donker: 'Donker',
       taal: 'Kies een taal',
       muziekAan: 'Muziek aanzetten',
-      muziekUit: 'Muziek dempen'
+      muziekUit: 'Muziek dempen',
+      menuOpenen: 'Menu openen',
+      menuSluiten: 'Menu sluiten'
     },
     home: {
       kicker: 'Digital Solutions Developer · Brussel',
@@ -170,7 +172,9 @@ window.VERTALINGEN = {
       donker: 'Dark',
       taal: 'Choose a language',
       muziekAan: 'Turn music on',
-      muziekUit: 'Mute music'
+      muziekUit: 'Mute music',
+      menuOpenen: 'Open menu',
+      menuSluiten: 'Close menu'
     },
     home: {
       kicker: 'Digital Solutions Developer · Brussels',
@@ -328,7 +332,9 @@ window.VERTALINGEN = {
       donker: 'Sombre',
       taal: 'Choisir une langue',
       muziekAan: 'Activer la musique',
-      muziekUit: 'Couper la musique'
+      muziekUit: 'Couper la musique',
+      menuOpenen: 'Ouvrir le menu',
+      menuSluiten: 'Fermer le menu'
     },
     home: {
       kicker: 'Digital Solutions Developer · Bruxelles',

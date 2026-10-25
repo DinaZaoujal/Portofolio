@@ -22,7 +22,7 @@ window.createPortfolio = function (DCLogic) {
 
   return class Component extends DCLogic {
     // De site opent in het donkere thema
-    state = { page: 'home', dark: true, sent: false, lang: leesTaal(), langOpen: false, dinoSpelen: false, muziekAan: false,
+    state = { page: 'home', dark: true, sent: false, lang: leesTaal(), langOpen: false, menuOpen: false, dinoSpelen: false, muziekAan: false,
       cookieOpen: window.Cookies.keuze() === null, cookieDetails: false };
 
     componentDidMount() {
@@ -34,8 +34,11 @@ window.createPortfolio = function (DCLogic) {
       this.domObserver.observe(document.body, { childList: true, subtree: true });
       document.documentElement.lang = this.state.lang;
 
-      // Taalmenu sluiten bij een klik ernaast of op Escape
+      // Taalmenu sluiten bij een klik ernaast of op Escape; Escape sluit ook het hamburgermenu
       this.sluitMenu = (e) => {
+        if (e.type === 'keydown' && e.key === 'Escape' && this.state.menuOpen) {
+          this.setState({ menuOpen: false });
+        }
         if (!this.state.langOpen) return;
         if (e.type === 'keydown' ? e.key === 'Escape' : !e.target.closest('.lang-switch')) {
           this.setState({ langOpen: false });
@@ -80,7 +83,7 @@ window.createPortfolio = function (DCLogic) {
     // Wissel van pagina en scroll naar boven
     go(p) {
       return () => {
-        this.setState({ page: p, sent: false, langOpen: false, dinoSpelen: false });
+        this.setState({ page: p, sent: false, langOpen: false, menuOpen: false, dinoSpelen: false });
         window.scrollTo(0, 0);
       };
     }
@@ -145,6 +148,14 @@ window.createPortfolio = function (DCLogic) {
             en: actief(s.lang === 'en', 'lang-optie'),
             fr: actief(s.lang === 'fr', 'lang-optie')
           }
+        },
+
+        // Hamburgermenu op smalle schermen (zie assets/css/layout.css)
+        menu: {
+          open: s.menuOpen,
+          label: s.menuOpen ? t.nav.menuSluiten : t.nav.menuOpenen,
+          klasse: s.menuOpen ? 'nav-links is-open' : 'nav-links',
+          toggle: () => this.setState(st => ({ menuOpen: !st.menuOpen, langOpen: false }))
         },
 
         muziek: {

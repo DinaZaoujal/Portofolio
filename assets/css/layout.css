@@ -689,3 +689,83 @@ a.nl.nav-logo { text-decoration: none; }
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+/* Hamburgerknop: alleen zichtbaar op smalle schermen, rechts in de nav */
+.nav-hamburger {
+  display: none;
+  position: relative;
+  flex-shrink: 0;
+  margin-left: auto;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background: none;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease;
+}
+.nav-hamburger:hover {
+  background: var(--ink);
+  color: var(--bg);
+}
+.nav-hamburger span {
+  position: absolute;
+  left: 11px;
+  right: 11px;
+  height: 2px;
+  background: currentColor;
+  transition: transform .3s var(--ease), opacity .2s ease;
+}
+.nav-hamburger span:nth-child(1) { top: 14px; }
+.nav-hamburger span:nth-child(2) { top: 20px; }
+.nav-hamburger span:nth-child(3) { top: 26px; }
+
+/* Open: de drie streepjes worden een kruisje */
+.nav-hamburger[aria-expanded="true"] span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.nav-hamburger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.nav-hamburger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+/* Mobiel en tablet: links in een zijpaneel dat van rechts inschuift */
+@media (max-width: 900px) {
+  .nav { gap: 16px; flex-wrap: nowrap; }
+  .nav-hamburger { display: block; }
+
+  /* Het gesloten paneel staat rechts buiten beeld; zonder clip kan je opzij scrollen */
+  .site { overflow-x: clip; }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: min(82vw, 320px);
+    height: calc(100vh - 109px); /* schermhoogte min de nav (92px logo + 16px padding + 1px lijn) */
+    margin: 0;
+    padding: 24px var(--gutter);
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 14px;
+    overflow-y: auto;
+    background: var(--bg);
+    border-left: 1px solid var(--nav-line);
+    box-shadow: var(--nav-shadow);
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: transform .35s var(--ease), visibility 0s linear .35s;
+  }
+  .nav-links.is-open {
+    transform: translateX(0);
+    visibility: visible;
+    transition: transform .35s var(--ease), visibility 0s;
+  }
+
+  /* Paginalinks elk op een eigen rij, de knoppen (muziek, thema, taal) samen eronder */
+  .nl.nav-item {
+    flex-basis: 100%;
+    text-align: left;
+    padding: 12px 0;
+    font-size: 17px;
+  }
+  .nl.nav-item::after { right: auto; width: 48px; }
+}
