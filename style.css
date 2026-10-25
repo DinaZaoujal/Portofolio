@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: #fff;
+  color: #211f20;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Three.js-canvas: vast achter de content, klikken gaan erdoor */
+#bloem-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  display: block;
+}
+
+/* Testcontent */
+.content {
+  position: relative;
+  z-index: 1;
+  padding: clamp(32px, 8vw, 96px) clamp(16px, 6vw, 80px);
+  max-width: 640px;
+}
+
+h1 {
+  margin: 0;
+  color: #E6007E;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(44px, 8vw, 96px);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.subtitle {
+  margin: 14px 0 0;
+  font-size: clamp(16px, 2vw, 22px);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.test-link {
+  display: inline-block;
+  margin-top: 28px;
+  color: #E6007E;
+}
+
+/* Foutmelding + bestandskiezer */
+.fallback {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2;
+  max-width: 320px;
+  padding: 16px 18px;
+  background: #fff;
+  border: 2px solid #E6007E;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.fallback[hidden] {
+  display: none;
+}
+
+.fallback p {
+  margin: 0 0 12px;
+}
+
+.fallback-knop {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #E6007E;
+  color: #fff;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.fallback-knop input {
+  display: none;
+}

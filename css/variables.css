@@ -1,0 +1,43 @@
+/* Kleuren — licht thema */
+:root {
+  --bg: #f0d9e0;
+  --alt: #efeae2;
+  --ink: #2b2a28;
+  --wine: #7d1f38;
+  --card: #fff;
+  --line: #2b2a28;
+  --muted: rgba(43, 42, 40, .62);
+  --fill: #cfc9c4;
+  --tape: #ded7cb;
+  --soft: #ddd6cb;
+  --btn-fill: #7d1f38;
+  --btn-ink: #fff;
+  --nav-bg: rgba(240, 217, 224, .58);    /* --bg (#f0d9e0), halfdoorzichtig */
+  --nav-line: rgba(125, 31, 56, .18);    /* --wine, zacht */
+  --nav-shadow: 0 8px 30px rgba(125, 31, 56, .08);
+
+  --font-sans: Archivo, system-ui, sans-serif;
+  --font-serif: "Instrument Serif", Georgia, serif;
+  --font-label: Roboto, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --gutter: 6vw;
+  --ease: cubic-bezier(.22, .7, .24, 1);
+}
+
+/* Kleuren — donker thema */
+[data-dark] {
+  --bg: #211f20;
+  --alt: #2b2a28;
+  --ink: #efeae2;
+  --wine: #f2b8c6;
+  --card: #332f30;
+  --line: rgba(239, 234, 226, .5);
+  --muted: rgba(239, 234, 226, .62);
+  --fill: #4a4547;
+  --tape: #4f4a44;
+  --soft: #3d3839;
+  --btn-fill: #f2b8c6;
+  --btn-ink: #211f20;
+  --nav-bg: rgba(43, 42, 40, .55);       /* --alt (#2b2a28), halfdoorzichtig */
+  --nav-line: rgba(242, 184, 198, .18);  /* --wine (#f2b8c6), zacht */
+  --nav-shadow: 0 8px 30px rgba(0, 0, 0, .25);
+}

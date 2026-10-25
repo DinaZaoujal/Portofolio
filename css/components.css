@@ -1,0 +1,173 @@
+/* Pills (tags) */
+.pill {
+  background: var(--card);
+  border: 1px solid var(--line);
+  font: 600 13px var(--font-sans);
+  letter-spacing: .04em;
+  padding: 8px 13px;
+  display: inline-block;
+  color: var(--ink);
+}
+.pill:hover {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 11px;
+}
+.tags-lg { gap: 10px; margin-top: 16px; }
+
+/* Knoppen */
+.btn {
+  font: 700 14px var(--font-sans);
+  letter-spacing: .06em;
+  padding: 15px 22px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--ink);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+a.btn { display: inline-block; border-bottom-width: 1px; }
+.btn:hover { background: var(--ink); color: var(--bg); }
+
+.btn-w {
+  background: var(--btn-fill);
+  border-color: var(--btn-fill);
+  color: var(--btn-ink);
+}
+.btn-w:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--bg);
+}
+
+/* Lichte knop op een donker vlak */
+.btn-invert {
+  background: var(--bg);
+  border-color: var(--bg);
+  color: var(--ink);
+}
+.btn-invert:hover {
+  background: var(--btn-fill);
+  border-color: var(--btn-fill);
+  color: var(--btn-ink);
+}
+
+.actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 34px;
+}
+
+.links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 26px;
+}
+
+/* Navigatieknoppen */
+.nl {
+  font: 600 15px var(--font-sans);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  background: none;
+  border: 0;
+  padding: 6px 0;
+  cursor: pointer;
+  color: var(--muted);
+  border-bottom: 2px solid transparent;
+}
+.nl:hover { color: var(--ink); }
+.on { color: var(--ink); border-bottom-color: var(--wine); }
+
+/* Onderstreep-animatie voor tekstlinks */
+.lnk {
+  position: relative;
+  border-bottom: 0 !important;
+  display: inline-block;
+}
+.lnk:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 1px;
+  width: 100%;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .3s var(--ease);
+}
+.lnk:hover:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Plakband op foto's */
+.tape {
+  position: absolute;
+  z-index: 2;
+  background: var(--tape);
+  border: 1px solid rgba(43, 42, 40, .25);
+  width: 64px;
+  height: 20px;
+}
+.tape-hero     { left: 44px; top: -12px; transform: rotate(-6deg); }
+.tape-featured { right: 60px; top: -10px; transform: rotate(5deg); }
+.tape-about    { left: 30px; top: -12px; transform: rotate(-7deg); }
+
+/* Afbeeldingsvakken */
+.slot { width: 100%; }
+.slot-half { width: 50%; }
+.slot-h420 { height: 420px; }
+.slot-h360 { height: 360px; }
+.slot-h300 { height: 300px; }
+.slot-h260 { height: 260px; }
+.slot-h150 { height: 150px; }
+
+/* Formuliervelden */
+.in {
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--ink);
+  font: 400 16px var(--font-sans);
+  padding: 13px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.in:focus-visible {
+  outline: 2px solid var(--wine);
+  outline-offset: 2px;
+}
+.field .in { margin-top: 8px; }
+
+/* Label + waarde (rol, jaar, ...) */
+.meta {
+  display: flex;
+  gap: 44px;
+  flex-wrap: wrap;
+  margin-top: 26px;
+}
+.meta-value {
+  font: 400 18px var(--font-sans);
+  margin-top: 7px;
+}
+
+/* Kaart met lichte achtergrond */
+.note-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 22px;
+}
+.note-card-text {
+  font: 400 18px/1.5 var(--font-sans);
+  margin-top: 10px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dina Zaoujal</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Three.js via importmap (jsDelivr) -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- Het Three.js-canvas wordt door script.js achter deze content gezet -->
+  <main class="content">
+    <h1>Dina Zaoujal</h1>
+    <p class="subtitle">Digital Experience Design</p>
+    <a class="test-link" href="#">Test: deze link blijft klikbaar</a>
+  </main>
+
+  <!-- Wordt getoond als bloem.png niet kan laden -->
+  <div id="bloem-fallback" class="fallback" hidden>
+    <p id="bloem-fallback-tekst">De afbeelding kon niet geladen worden.</p>
+    <label class="fallback-knop">
+      Kies zelf een afbeelding
+      <input id="bloem-input" type="file" accept="image/*">
+    </label>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

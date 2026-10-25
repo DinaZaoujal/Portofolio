@@ -1,0 +1,88 @@
+/* Laadscherm (zie js/loader.js).
+   Staat los van de andere css-bestanden: die laadt de dc-runtime pas later,
+   het laadscherm moet meteen zichtbaar zijn. Kleuren komen uit het donkere thema
+   in css/variables.css, zodat het roze logo goed opvalt. */
+html.is-laden { overflow: hidden; }
+
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  overflow: hidden;
+  /* Wazige achtergrond in het donkere thema (--bg #211f20) + blur over de site */
+  background: rgba(33, 31, 32, .96);
+  -webkit-backdrop-filter: blur(24px) saturate(1.3);
+  backdrop-filter: blur(24px) saturate(1.3);
+  transition: opacity .6s ease, visibility .6s ease;
+}
+
+/* Zachte, wazige kleurvlekken in het palet */
+.loader::before {
+  content: "";
+  position: absolute;
+  inset: -15%;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 28% 32%, rgba(51, 47, 48, .9), transparent 45%),
+    radial-gradient(circle at 72% 68%, rgba(242, 184, 198, .06), transparent 48%),
+    radial-gradient(circle at 80% 20%, rgba(43, 42, 40, .9), transparent 40%);
+  filter: blur(50px);
+  animation: loader-zweef 7s ease-in-out infinite alternate;
+}
+
+@keyframes loader-zweef {
+  from { transform: translate(-3%, -2%) scale(1); }
+  to   { transform: translate(3%, 2%) scale(1.08); }
+}
+
+/* De gif heeft veel lege ruimte rond het logo: uitsnede in het midden */
+.loader-logo {
+  position: relative;
+  width: min(580px, 94vw);
+  aspect-ratio: 16 / 7;
+  overflow: hidden;
+}
+.loader-logo img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 220%;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+.loader-balk {
+  width: min(460px, 82vw);
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(242, 184, 198, .18);
+  overflow: hidden;
+}
+.loader-vulling {
+  height: 100%;
+  background: #f2b8c6;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+/* Percentage in de titel-typo van de site (Instrument Serif, cursief) */
+.loader-getal {
+  font: italic 400 46px/1 "Instrument Serif", Georgia, serif;
+  min-width: 3em;
+  text-align: center;
+  color: #efeae2;
+}
+
+.loader.is-klaar {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loader::before { animation: none; }
+}

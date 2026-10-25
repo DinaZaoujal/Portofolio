@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Alle paden vanaf de root, zodat de pagina ook werkt op een diepe, foute URL -->
+<base href="/">
+<title>404 · Dina Zaoujal</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="_ds/modernist-34fff0d0-177a-4ea5-b092-f9b2a8e3cc60/styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Roboto:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/animations.css">
+<script src="js/vertalingen.js"></script>
+<script type="module" src="js/bloem-achtergrond.js"></script>
+</head>
+<body>
+
+<div class="site" data-dark="true">
+
+<div class="nav">
+<a class="nl nav-logo" href="Dina%20Zaoujal%20Portfolio.dc.html" aria-label="Dina Zaoujal · Home">
+<span class="nav-logo-gif"><img src="uploads/gif/output-onlinegiftools%20(2).gif" alt=""></span>
+</a>
+</div>
+
+<div class="pg hero bg-sectie fout-pagina">
+<div class="hero-bg" data-effect="bloem" aria-hidden="true"></div>
+<div class="fout-inhoud">
+<div class="fout-getal ser" aria-hidden="true">404</div>
+<div class="mono" data-t="fout404.kicker">Fout 404</div>
+<h1 class="ser t-page"><span data-t="fout404.titel1">Deze pagina is </span><span class="accent" data-t="fout404.titelAccent">weggewaaid</span></h1>
+<p class="text" data-t="fout404.tekst">De pagina die je zoekt bestaat niet (meer) of is verhuisd. Geen zorgen, de rest van de site staat er nog.</p>
+<div class="actions">
+<a class="btn btn-w" href="Dina%20Zaoujal%20Portfolio.dc.html" data-t="fout404.home">Terug naar home</a>
+<a class="btn" href="mailto:dinazaoujal@gmail.com?subject=404" data-t="fout404.melden">Laat het me weten</a>
+</div>
+</div>
+</div>
+
+</div>
+
+<script>
+  // Teksten in de taal van de bezoeker (zelfde keuze als op de rest van de site)
+  (function () {
+    const talen = ['nl', 'en', 'fr'];
+    let taal = null;
+    try { taal = localStorage.getItem('taal'); } catch (e) {}
+    if (!talen.includes(taal)) taal = (navigator.language || 'nl').slice(0, 2);
+    if (!talen.includes(taal)) taal = 'nl';
+
+    const t = window.VERTALINGEN[taal];
+    document.documentElement.lang = taal;
+    document.querySelectorAll('[data-t]').forEach(el => {
+      const waarde = el.dataset.t.split('.').reduce((o, k) => o && o[k], t);
+      if (typeof waarde === 'string') el.textContent = waarde;
+    });
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+/* Keyframes */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(26px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes tapein {
+  from { opacity: 0; transform: rotate(0deg) scale(.9); }
+  to   { opacity: 1; }
+}
+
+/* Verschijnen bij scrollen (.sh wordt via JS toegevoegd) */
+.rv { opacity: 0; }
+.rv.sh { animation: rise .62s var(--ease) forwards; }
+
+.stg > * { opacity: 0; }
+.stg.sh > * { animation: rise .55s var(--ease) forwards; }
+.stg.sh > *:nth-child(1)  { animation-delay: .02s; }
+.stg.sh > *:nth-child(2)  { animation-delay: .05s; }
+.stg.sh > *:nth-child(3)  { animation-delay: .08s; }
+.stg.sh > *:nth-child(4)  { animation-delay: .11s; }
+.stg.sh > *:nth-child(5)  { animation-delay: .14s; }
+.stg.sh > *:nth-child(6)  { animation-delay: .17s; }
+.stg.sh > *:nth-child(7)  { animation-delay: .2s; }
+.stg.sh > *:nth-child(8)  { animation-delay: .23s; }
+.stg.sh > *:nth-child(9)  { animation-delay: .26s; }
+.stg.sh > *:nth-child(10) { animation-delay: .29s; }
+.stg.sh > *:nth-child(11) { animation-delay: .32s; }
+.stg.sh > *:nth-child(12) { animation-delay: .35s; }
+
+.pg { animation: fade .4s ease both; }
+.tape { animation: tapein .7s ease forwards; }
+
+/* Hover-overgangen */
+.pill { transition: transform .22s var(--ease), background .22s ease, color .22s ease; }
+.pill:hover { transform: translateY(-3px); }
+
+.btn { transition: background .22s ease, color .22s ease, transform .22s var(--ease); }
+.btn:hover { transform: translateY(-2px); }
+.btn:active { transform: translateY(0); }
+
+.nl { transition: color .2s ease, border-color .2s ease; }
+
+image-slot { transition: transform .4s var(--ease); }
+
+/* Minder beweging */
+@media (prefers-reduced-motion: reduce) {
+  .rv, .stg > * { opacity: 1 !important; animation: none !important; }
+  .pg, .tape { animation: none; }
+  .pill:hover, .btn:hover { transform: none; }
+}

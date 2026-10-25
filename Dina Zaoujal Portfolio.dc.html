@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preload" as="image" href="uploads/gif/output-onlinegiftools%20(2).gif">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Roboto:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/loader.css">
+<script src="js/cookies.js"></script>
+<script src="js/vertalingen.js"></script>
+<script src="js/muziek.js"></script>
+<script src="js/portfolio.js"></script>
+<script type="module" src="js/bloem-achtergrond.js"></script>
+<script type="module" src="js/water-achtergrond.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+
+<!-- Laadscherm: staat buiten de dc-template zodat het meteen zichtbaar is (css/loader.css, js/loader.js).
+     Let op: schrijf hier nooit de tagnaam van die template, de runtime zoekt daar letterlijk naar. -->
+<div id="loader" class="loader" role="progressbar" aria-label="Dina Studio" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+<div class="loader-logo"><img src="uploads/gif/output-onlinegiftools%20(2).gif" alt="Dina Studio"></div>
+<div class="loader-balk"><div class="loader-vulling"></div></div>
+<div class="loader-getal">0%</div>
+</div>
+<script src="js/loader.js"></script>
+
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/modernist-34fff0d0-177a-4ea5-b092-f9b2a8e3cc60/styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Roboto:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/animations.css">
+<script src="_ds/modernist-34fff0d0-177a-4ea5-b092-f9b2a8e3cc60/_ds_bundle.js"></script>
+<script src="./image-slot.js"></script>
+</helmet>
+
+<div class="site" data-dark="{{ darkAttr }}">
+
+<div class="nav">
+<button class="nl on nav-logo" onClick="{{ goHome }}" aria-label="Dina Zaoujal · Home">
+<span class="nav-logo-gif"><img src="uploads/gif/output-onlinegiftools%20(2).gif" alt=""></span>
+</button>
+<div class="nav-links">
+<button class="{{ navKlasse.home }}" onClick="{{ goHome }}">{{ t.nav.home }}</button>
+<button class="{{ navKlasse.projects }}" onClick="{{ goProjects }}">{{ t.nav.projecten }}</button>
+<button class="{{ navKlasse.about }}" onClick="{{ goAbout }}">{{ t.nav.over }}</button>
+<button class="{{ navKlasse.contact }}" onClick="{{ goContact }}">{{ t.nav.contact }}</button>
+<button class="{{ muziek.klasse }}" onClick="{{ muziek.toggle }}" aria-pressed="{{ muziek.aan }}" aria-label="{{ muziek.label }}" title="{{ muziek.label }}">
+<svg class="muziek-icoon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor" stroke="none"/>
+<path class="muziek-golf" d="M16.5 8.5a5 5 0 0 1 0 7"/>
+<path class="muziek-golf muziek-golf-2" d="M19 6a8.5 8.5 0 0 1 0 12"/>
+<path class="muziek-kruis" d="M16 9l6 6M22 9l-6 6"/>
+</svg>
+</button>
+<button class="nl nav-theme" onClick="{{ toggleDark }}">{{ themeLabel }}</button>
+<div class="lang-switch">
+<button class="nl nav-lang" onClick="{{ taal.toggle }}" aria-label="{{ t.nav.taal }}" aria-expanded="{{ taal.open }}" aria-haspopup="true">
+<img class="lang-icon lang-icon-zwart" src="uploads/icons/icontaal_zwart.svg.png" alt="">
+<img class="lang-icon lang-icon-wit" src="uploads/icons/icoontaal_wit.svg.png" alt="">
+<span>{{ taal.code }}</span>
+</button>
+<sc-if value="{{ taal.open }}" hint-placeholder-val="{{ false }}">
+<div class="lang-menu">
+<button class="{{ taal.klasse.nl }}" lang="nl" onClick="{{ taal.kies.nl }}">{{ taal.naam.nl }}</button>
+<button class="{{ taal.klasse.en }}" lang="en" onClick="{{ taal.kies.en }}">{{ taal.naam.en }}</button>
+<button class="{{ taal.klasse.fr }}" lang="fr" onClick="{{ taal.kies.fr }}">{{ taal.naam.fr }}</button>
+</div>
+</sc-if>
+</div>
+</div>
+</div>
+
+<sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+<div>
+<div class="pg split hero bg-sectie">
+<!-- Achtergrond-effect: "water", "bloem" of "water bloem" (allebei) -->
+<div class="hero-bg" data-effect="bloem" aria-hidden="true"></div>
+<div class="stg split-main">
+<div class="mono">{{ t.home.kicker }}</div>
+<div class="ser t-hero">{{ t.home.titel1 }}<span class="accent">{{ t.home.titelAccent }}</span>{{ t.home.titel2 }}</div>
+
+<div class="actions">
+
+<button class="btn btn-w" onClick="{{ goProjects }}">{{ t.home.btnProjecten }}</button>
+<button class="btn" onClick="{{ goContact }}">{{ t.home.btnContact }}</button>
+</div>
+</div>
+<div class="rv split-photo">
+<div class="tape tape-hero"></div>
+<image-slot id="portret" class="slot slot-h420" shape="rect" placeholder="{{ t.home.portretPlaceholder }}"></image-slot>
+</div>
+</div>
+
+<div class="rv section stack-section">
+<!-- Muziek-visualizer: de strepen staan op de lijn boven Tech stack (js/muziek.js) -->
+<div class="muziek-balk" aria-hidden="true"></div>
+<div class="mono">{{ t.home.stack }}</div>
+<div class="tags tags-lg">
+<span class="pill">React</span><span class="pill">TypeScript</span><span class="pill">JavaScript</span><span class="pill">Node.js</span><span class="pill">Python</span><span class="pill">HTML5 / CSS3</span><span class="pill">Tailwind</span><span class="pill">Figma</span><span class="pill">Git / GitHub</span><span class="pill">MongoDB</span><span class="pill">SQL</span><span class="pill">REST API's</span>
+</div>
+</div>
+
+<div class="rv section banner">
+<div class="mono">{{ t.home.beschikbaarheid }}</div>
+<div class="ser t-banner">{{ t.home.bannerTitel }}</div>
+<div class="banner-meta">
+<div><div class="mono">{{ t.home.diensten }}</div><div class="banner-value">{{ t.home.dienstenTekst }}</div></div>
+<div class="banner-wide"><div class="mono">{{ t.home.meebreng }}</div><div class="banner-value">{{ t.home.meebrengTekst }}</div></div>
+</div>
+</div>
+
+<div class="rv section featured">
+<div class="featured-text">
+<div class="mono">{{ t.home.uitgelicht }}</div>
+<div class="ser t-section">{{ t.home.dinoTitel }}</div>
+<p class="text text-narrow">{{ t.home.dinoTekst }}</p>
+<button class="btn" onClick="{{ goProjects }}">{{ t.home.caseStudy }}</button>
+</div>
+<div class="featured-media">
+<div class="tape tape-featured"></div>
+<image-slot id="dino-hero" class="slot slot-h300" shape="rect" placeholder="{{ t.home.dinoPlaceholder }}"></image-slot>
+</div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isProjects }}" hint-placeholder-val="{{ false }}">
+<div class="pg stg page">
+<div class="mono">{{ t.nav.projecten }}</div>
+<div class="ser t-page">{{ t.projecten.titel1 }}<span class="accent">{{ t.projecten.titelAccent }}</span></div>
+<p class="text text-intro">{{ t.projecten.intro }}</p>
+
+<div class="rv project project-first">
+<div class="project-info">
+<div class="mono">01 · Machine learning</div>
+<div class="ser t-project">Teachable Machine × Google Dino</div>
+<p class="text">{{ t.projecten.p1Tekst }}</p>
+<div class="doelgroep">
+<div class="mono">{{ t.projecten.doelgroep }}</div>
+<p class="text">{{ t.projecten.doelgroepTekst }}</p>
+</div>
+<div class="spelregels">
+<div class="mono">{{ t.projecten.hoeSpelen }}</div>
+<ul class="regels">
+<li>{{ t.projecten.regel1 }}</li>
+<li>{{ t.projecten.regel2 }}</li>
+<li>{{ t.projecten.regel3 }}</li>
+</ul>
+</div>
+<div class="meta">
+<div><div class="mono">{{ t.projecten.rol }}</div><div class="meta-value">{{ t.projecten.p1Rol }}</div></div>
+<div><div class="mono">{{ t.projecten.jaar }}</div><div class="meta-value">2026</div></div>
+</div>
+<div class="project-stack"><div class="mono">{{ t.home.stack }}</div>
+<div class="tags"><span class="pill">Teachable Machine</span><span class="pill">TensorFlow.js</span><span class="pill">JavaScript</span><span class="pill">Webcam API</span><span class="pill">HTML5 / CSS3</span><span class="pill">Vercel</span></div></div>
+<div class="links">
+<a class="btn btn-w" href="https://dino-game-teachable-machine.vercel.app" target="_blank" rel="noopener">{{ t.projecten.liveDemo }}</a>
+<a class="btn" href="https://github.com/DinaZaoujal/Dino-game-teachable-machine" target="_blank" rel="noopener">{{ t.projecten.github }}</a>
+</div>
+</div>
+<div class="project-3d">
+<div class="viewer viewer-game">
+<!-- Het spel laadt pas na een klik, zodat de webcam niet meteen gevraagd wordt -->
+<sc-if value="{{ dino.spelen }}" hint-placeholder-val="{{ false }}">
+<iframe src="https://dino-game-teachable-machine.vercel.app" title="Dino Game — Teachable Machine" allow="camera; autoplay; fullscreen"></iframe>
+</sc-if>
+<sc-if value="{{ !dino.spelen }}" hint-placeholder-val="{{ true }}">
+<button class="game-start" onClick="{{ dino.start }}">
+<span class="game-start-icon">▶</span>
+<span class="ser t-card">{{ t.projecten.speelHier }}</span>
+<span class="mono">{{ t.projecten.cameraNodig }}</span>
+</button>
+</sc-if>
+</div>
+<div class="game-onder">
+<span class="mono viewer-hint">{{ t.projecten.dinoHint }}</span>
+<sc-if value="{{ dino.spelen }}" hint-placeholder-val="{{ false }}">
+<button class="nl game-stop" onClick="{{ dino.stop }}">■ {{ t.projecten.stopSpel }}</button>
+</sc-if>
+<a class="lnk game-tab" href="https://dino-game-teachable-machine.vercel.app" target="_blank" rel="noopener">{{ t.projecten.openTab }}</a>
+</div>
+</div>
+</div>
+
+<div class="rv project">
+<div class="project-info">
+<div class="mono">02 · 3D &amp; WebGL</div>
+<div class="ser t-project">{{ t.projecten.p2Titel }}</div>
+<p class="text">{{ t.projecten.p2Tekst }}</p>
+<div class="meta">
+<div><div class="mono">{{ t.projecten.rol }}</div><div class="meta-value">{{ t.projecten.p2Rol }}</div></div>
+<div><div class="mono">{{ t.projecten.jaar }}</div><div class="meta-value">2026</div></div>
+</div>
+<div class="project-stack"><div class="mono">{{ t.home.stack }}</div>
+<div class="tags"><span class="pill">three.js</span><span class="pill">WebGL</span><span class="pill">JavaScript</span><span class="pill">Web Components</span><span class="pill">OBJ / GLB export</span></div></div>
+<div class="links">
+<a class="btn btn-w" href="flower.html" target="_blank" rel="noopener">{{ t.projecten.open3d }}</a>
+<a class="btn" href="flower.obj" download>{{ t.projecten.downloadObj }}</a>
+</div>
+</div>
+<div class="project-3d">
+<div class="viewer">
+<iframe src="flower.html" title="3D hibiscus" loading="lazy"></iframe>
+</div>
+<div class="mono viewer-hint">{{ t.projecten.viewerHint }}</div>
+</div>
+</div>
+
+<div class="rv open-slots">
+<div class="open-slot">
+<div class="mono">03 · {{ t.projecten.vrijePlek }}</div>
+<div class="ser t-card">{{ t.projecten.volgend }}</div>
+<p>{{ t.projecten.plek3Tekst }}</p>
+</div>
+<div class="open-slot">
+<div class="mono">04 · {{ t.projecten.vrijePlek }}</div>
+<div class="ser t-card">{{ t.projecten.volgend }}</div>
+<p>{{ t.projecten.plek4Tekst }}</p>
+</div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isAbout }}" hint-placeholder-val="{{ false }}">
+<div class="pg page">
+<div class="split">
+<div class="stg split-main">
+<div class="mono">{{ t.nav.over }}</div>
+<div class="ser t-page">{{ t.over.titel1 }}<span class="accent">{{ t.over.titelAccent }}</span></div>
+<p class="text">{{ t.over.tekst }}</p>
+<a class="btn btn-w cv-btn" href="uploads/cv.pdf" download="Dina-Zaoujal-CV.pdf">{{ t.over.cv }}</a>
+</div>
+<div class="rv split-photo split-photo-sm">
+<div class="tape tape-about"></div>
+<image-slot id="about-foto" class="slot slot-h360" shape="rect" placeholder="{{ t.over.fotoPlaceholder }}"></image-slot>
+</div>
+</div>
+
+<div class="rv skills">
+<div class="mono">{{ t.over.skills }}</div>
+<div class="skills-grid">
+<div><div class="ser t-sub">{{ t.over.programming }}</div>
+<div class="tags"><span class="pill">JavaScript</span><span class="pill">TypeScript</span><span class="pill">Python</span><span class="pill">HTML5 / CSS3</span><span class="pill">React</span><span class="pill">Node.js</span></div></div>
+<div><div class="ser t-sub">{{ t.over.design }}</div>
+<div class="tags"><span class="pill">Figma</span><span class="pill">Photoshop</span><span class="pill">Illustrator</span><span class="pill">Wireframing</span><span class="pill">Prototyping</span><span class="pill">{{ t.over.skillToegankelijkheid }}</span></div></div>
+<div><div class="ser t-sub">{{ t.over.tools }}</div>
+<div class="tags"><span class="pill">Git / GitHub</span><span class="pill">SQL</span><span class="pill">MongoDB</span><span class="pill">REST API's</span><span class="pill">VS Code</span></div></div>
+<div><div class="ser t-sub">{{ t.over.marketing }}</div>
+<div class="tags"><span class="pill">{{ t.over.skillMarketing }}</span><span class="pill">{{ t.over.skillGrafisch }}</span><span class="pill">{{ t.over.skillOnderzoek }}</span><span class="pill">{{ t.over.skillBranding }}</span><span class="pill">{{ t.over.skillSocial }}</span></div></div>
+</div>
+</div>
+
+<div class="rv about-details">
+<div class="languages">
+<div class="mono">{{ t.over.talenkennis }}</div>
+<div class="lang-list">
+<div class="lang"><span class="lang-name">{{ t.over.nederlands }}</span><span class="mono">{{ t.over.moedertaal }}</span></div>
+<div class="lang"><span class="lang-name">{{ t.over.engels }}</span><span class="mono">{{ t.over.vloeiend }}</span></div>
+<div class="lang"><span class="lang-name">{{ t.over.frans }}</span><span class="mono">{{ t.over.professioneel }}</span></div>
+</div>
+</div>
+<div class="experience">
+<div class="mono">{{ t.over.achtergrond }}</div>
+<div class="timeline">
+<div><div class="mono">Design</div><div class="ser">{{ t.over.uxui }}</div><div class="timeline-place">{{ t.over.uxuiTekst }}</div></div>
+<div><div class="mono">Front-end</div><div class="ser">{{ t.over.frontend }}</div><div class="timeline-place">{{ t.over.frontendTekst }}</div></div>
+<div><div class="mono">Back-end</div><div class="ser">{{ t.over.backend }}</div><div class="timeline-place">{{ t.over.backendTekst }}</div></div>
+<div><div class="mono">{{ t.over.labelGrafisch }}</div><div class="ser">{{ t.over.grafisch }}</div><div class="timeline-place">{{ t.over.grafischTekst }}</div></div>
+<div><div class="mono">{{ t.over.labelMarketing }}</div><div class="ser">{{ t.over.marketingTitel }}</div><div class="timeline-place">{{ t.over.marketingTekst }}</div></div>
+<div><div class="mono">{{ t.over.labelOnderzoek }}</div><div class="ser">{{ t.over.onderzoek }}</div><div class="timeline-place">{{ t.over.onderzoekTekst }}</div></div>
+</div>
+</div>
+</div>
+
+<div class="rv cta">
+<div class="ser t-cta">{{ t.over.cta }}</div>
+<button class="btn btn-invert" onClick="{{ goContact }}">{{ t.over.contacteer }}</button>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isContact }}" hint-placeholder-val="{{ false }}">
+<div class="pg page bg-sectie contact-page">
+<div class="hero-bg" data-effect="bloem" aria-hidden="true"></div>
+<div class="mono">{{ t.nav.contact }}</div>
+<div class="ser t-page">{{ t.contact.titel1 }}<span class="accent">{{ t.contact.titelAccent }}</span></div>
+<div class="contact">
+<form class="stg contact-form" onSubmit="{{ onSubmit }}">
+<div class="field"><label class="mono" for="c-naam">{{ t.contact.naam }}</label><input class="in" id="c-naam" placeholder="{{ t.contact.naamPh }}"></div>
+<div class="field"><label class="mono" for="c-mail">{{ t.contact.mail }}</label><input class="in" id="c-mail" type="email" placeholder="{{ t.contact.mailPh }}"></div>
+<div class="field"><label class="mono" for="c-onderwerp">{{ t.contact.onderwerp }}</label><input class="in" id="c-onderwerp" placeholder="{{ t.contact.onderwerpPh }}"></div>
+<div class="field"><label class="mono" for="c-bericht">{{ t.contact.bericht }}</label><textarea class="in" id="c-bericht" rows="5" placeholder="{{ t.contact.berichtPh }}"></textarea></div>
+<button class="btn btn-w" type="submit">{{ t.contact.verstuur }}</button>
+<div class="form-note">{{ sentNote }}</div>
+</form>
+<div class="rv contact-side">
+<div class="contact-block">
+<div class="mono">{{ t.contact.direct }}</div>
+<div class="contact-line"><a href="mailto:dinazaoujal@gmail.com">dinazaoujal@gmail.com</a></div>
+<div class="contact-line">{{ t.contact.telefoon }}</div>
+<div class="contact-line muted">{{ t.contact.locatie }}</div>
+</div>
+<div class="contact-block contact-block-thin">
+<div class="mono">{{ t.contact.profielen }}</div>
+<div class="contact-links">
+<a href="#">GitHub ↗</a>
+<a href="#">LinkedIn ↗</a>
+<a href="#">Behance ↗</a>
+</div>
+</div>
+<div class="note-card">
+<div class="mono">{{ t.contact.websiteNodig }}</div>
+<div class="note-card-text">{{ t.contact.noteTekst }}</div>
+</div>
+</div>
+</div>
+</div>
+</sc-if>
+
+<div class="rv footer">
+<div class="footer-cols">
+<div class="footer-about">
+<div class="ser footer-name">Dina Zaoujal</div>
+<div class="footer-tagline">{{ t.footer.tagline }}</div>
+</div>
+<div class="footer-col footer-col-wide">
+<div class="mono">{{ t.nav.contact }}</div>
+<div class="footer-list">
+<a class="lnk" href="mailto:dinazaoujal@gmail.com">dinazaoujal@gmail.com</a>
+<a class="lnk" href="tel:">{{ t.contact.telefoon }}</a>
+<span>{{ t.contact.locatie }}</span>
+</div>
+</div>
+<div class="footer-col">
+<div class="mono">{{ t.contact.profielen }}</div>
+<div class="footer-list">
+<a class="lnk" href="#">GitHub ↗</a>
+<a class="lnk" href="#">LinkedIn ↗</a>
+<a class="lnk" href="#">Behance ↗</a>
+</div>
+</div>
+<div class="footer-col">
+<div class="mono">{{ t.footer.navigatie }}</div>
+<div class="footer-list">
+<button class="nl footer-link" onClick="{{ goHome }}">{{ t.nav.home }}</button>
+<button class="nl footer-link" onClick="{{ goProjects }}">{{ t.nav.projecten }}</button>
+<button class="nl footer-link" onClick="{{ goAbout }}">{{ t.nav.over }}</button>
+<button class="nl footer-link" onClick="{{ goContact }}">{{ t.nav.contact }}</button>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<span class="mono">© 2026 Dina Zaoujal</span>
+<button class="nl footer-link footer-cookies" onClick="{{ cookies.open }}">{{ t.cookies.instellingen }}</button>
+<a class="btn btn-w footer-cv" href="uploads/cv.pdf" download="Dina-Zaoujal-CV.pdf">{{ t.footer.cv }}</a>
+</div>
+</div>
+
+<sc-if value="{{ cookies.toon }}" hint-placeholder-val="{{ false }}">
+<div class="cookie-banner" role="dialog" aria-labelledby="cookie-titel">
+<div class="ser t-card" id="cookie-titel">{{ t.cookies.titel }}</div>
+<p class="cookie-tekst">{{ t.cookies.tekst }}</p>
+<sc-if value="{{ cookies.details }}" hint-placeholder-val="{{ false }}">
+<ul class="cookie-lijst">
+<li><strong>{{ t.cookies.noodzakelijk }}</strong>: {{ t.cookies.noodzakelijkTekst }}</li>
+<li><strong>{{ t.cookies.voorkeuren }}</strong>: {{ t.cookies.voorkeurenTekst }}</li>
+<li><strong>{{ t.cookies.extern }}</strong>: {{ t.cookies.externTekst }}</li>
+</ul>
+</sc-if>
+<div class="cookie-knoppen">
+<button class="btn btn-w" onClick="{{ cookies.accepteer }}">{{ t.cookies.accepteer }}</button>
+<button class="btn" onClick="{{ cookies.weiger }}">{{ t.cookies.weiger }}</button>
+<button class="nl cookie-meer" onClick="{{ cookies.toggleDetails }}" aria-expanded="{{ cookies.details }}">{{ cookies.detailsLabel }}</button>
+</div>
+</div>
+</sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:900}}">
+// De logica staat in js/portfolio.js
+const Component = window.createPortfolio(DCLogic);
+</script>
+</body>
+</html>
