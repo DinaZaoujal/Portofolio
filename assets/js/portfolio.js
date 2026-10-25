@@ -14,7 +14,7 @@ window.createPortfolio = function (DCLogic) {
     return TALEN.includes(browser) ? browser : 'nl';
   }
 
-  // Alleen bewaren als de bezoeker de cookies accepteerde (zie js/cookies.js)
+  // Alleen bewaren als de bezoeker de cookies accepteerde (zie assets/js/cookies.js)
   function bewaarTaal(taal) {
     if (!window.Cookies.voorkeurenToegestaan()) return;
     try { localStorage.setItem('taal', taal); } catch (e) {}
@@ -44,7 +44,7 @@ window.createPortfolio = function (DCLogic) {
       document.addEventListener('click', this.sluitMenu);
       document.addEventListener('keydown', this.sluitMenu);
 
-      // Muziekstatus volgen (zie js/muziek.js)
+      // Muziekstatus volgen (zie assets/js/muziek.js)
       this.muziekStatus = (e) => this.setState({ muziekAan: e.detail.aan });
       window.addEventListener('muziek', this.muziekStatus);
     }

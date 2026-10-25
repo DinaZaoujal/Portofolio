@@ -1,7 +1,7 @@
-/* Laadscherm (zie js/loader.js).
+/* Laadscherm (zie assets/js/loader.js).
    Staat los van de andere css-bestanden: die laadt de dc-runtime pas later,
    het laadscherm moet meteen zichtbaar zijn. Kleuren komen uit het donkere thema
-   in css/variables.css, zodat het roze logo goed opvalt. */
+   in assets/css/variables.css, zodat het roze logo goed opvalt. */
 html.is-laden { overflow: hidden; }
 
 .loader {

@@ -216,7 +216,7 @@
   min-height: 78vh;
 }
 
-/* Home & contact — interactieve bloem-achtergrond (zie js/bloem-achtergrond.js) */
+/* Home & contact — interactieve bloem-achtergrond (zie assets/js/bloem-achtergrond.js) */
 .bg-sectie { position: relative; }
 .hero-bg {
   position: absolute;
@@ -239,7 +239,7 @@
   position: relative;
   z-index: 1;
 }
-/* Muziek-visualizer: staat op de lijn boven Tech stack (zie js/muziek.js) */
+/* Muziek-visualizer: staat op de lijn boven Tech stack (zie assets/js/muziek.js) */
 .stack-section { position: relative; }
 .stack-section > .muziek-balk {
   position: absolute;
@@ -649,7 +649,7 @@
 .fout-pagina .text { margin-top: 18px; }
 a.nl.nav-logo { text-decoration: none; }
 
-/* Cookie-popup (zie js/cookies.js) */
+/* Cookie-popup (zie assets/js/cookies.js) */
 .cookie-banner {
   position: fixed;
   left: 16px;

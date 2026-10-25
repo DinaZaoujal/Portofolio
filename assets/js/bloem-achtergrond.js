@@ -6,7 +6,7 @@ import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.m
 
 // ===== Instellingen =====
 const CONFIG = {
-  afbeelding: 'uploads/bloemen.jpeg', // bronafbeelding (pad t.o.v. de HTML)
+  afbeelding: 'assets/images/bloesem-achtergrond.jpeg', // bronafbeelding (pad t.o.v. de HTML)
   rand: 6,                  // snij zoveel px van elke rand af (de jpeg heeft bovenaan een zwarte lijn)
   spiegelen: false,         // horizontaal spiegelen (true = tak groeit vanuit de rechterrand)
   vasteKleurGebruiken: false, // true = alle puntjes in vasteKleur (licht thema)

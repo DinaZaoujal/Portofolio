@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../assets/js/vendor/support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="../_ds/modernist-34fff0d0-177a-4ea5-b092-f9b2a8e3cc60/styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap">
+<script src="../_ds/modernist-34fff0d0-177a-4ea5-b092-f9b2a8e3cc60/_ds_bundle.js"></script>
+<style>
+body{margin:0;background:#e8e6e3;font-family:Archivo,system-ui,sans-serif}
+.f{background:#fff;border:2px solid #201e1d;overflow:hidden;position:relative}
+.b{background:#cfcccb;height:9px}
+.nv{display:flex;align-items:center;gap:22px;padding:12px 18px;border-bottom:2px solid #201e1d;font:700 9px Archivo,sans-serif;letter-spacing:.1em}
+.nvi{font:400 9px ui-monospace,Menlo,monospace;color:rgba(32,30,29,.7)}
+.ph{position:relative;background:#d8d6d5;overflow:hidden}
+.ph:before,.ph:after{content:"";position:absolute;inset:0;border-top:1px solid rgba(32,30,29,.28);transform-origin:top left}
+.ph:before{transform:rotate(var(--a,32deg));width:200%}
+.ph:after{top:100%;transform:rotate(calc(-1 * var(--a,32deg)));width:200%}
+.hd{font-weight:800;letter-spacing:-.02em;line-height:.86;text-transform:uppercase}
+.mob{width:168px;height:300px}
+.tag{font:700 8px ui-monospace,Menlo,monospace;letter-spacing:.12em;color:#ec3013}
+.ser{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:400;line-height:.95}
+.pill{background:#fff;border:1px solid #2b2a28;font:700 8px Archivo;letter-spacing:.06em;padding:5px 8px;display:inline-block}
+.cut{background:#c9c4c0;position:relative;overflow:hidden}
+.tape{position:absolute;background:#ded7cb;border:1px solid rgba(43,42,40,.3);width:34px;height:12px}
+.mono{font:700 8px ui-monospace,Menlo,monospace;letter-spacing:.12em;color:rgba(43,42,40,.6)}
+</style></helmet>
+<x-import component-from-global-scope="deck-stage" from="../assets/js/vendor/deck-stage.js" width="1920" height="1080" hint-size="100%,100%">
+<section data-label="Cover" data-screen-label="Cover" data-speaker-notes="Two directions for the portfolio site, wireframed across six screens." style="width:1920px;height:1080px;background:#f3f2f2;color:#201e1d;font-family:Archivo,sans-serif;box-sizing:border-box;overflow:hidden"><div style="height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:96px">
+<div style="font:700 26px Archivo;letter-spacing:.2em;color:#ec3013">WIREFRAMES · 2026.09</div>
+<div><div style="font:800 190px/0.85 Archivo;letter-spacing:-.03em;text-transform:uppercase">Portfolio<br>site</div>
+<div style="font:400 40px Archivo;margin-top:36px;max-width:1100px">Six screens, two directions, desktop and mobile. Structure only — no final type, color or imagery.</div></div>
+<div style="border-top:4px solid #201e1d;padding-top:26px;display:flex;justify-content:space-between;font:700 26px Archivo;letter-spacing:.1em"><span>OLHA LAZARIEVA</span><span>DIRECTION A / DIRECTION B</span></div></div></section>
+<section data-label="Contents" data-screen-label="Contents" data-speaker-notes="Six screens: home, about, services, playground, journal, contact." style="width:1920px;height:1080px;background:#f3f2f2;color:#201e1d;font-family:Archivo,sans-serif;box-sizing:border-box;overflow:hidden"><div style="padding:64px 96px 0"><div style="font:700 24px Archivo;letter-spacing:.18em;color:#ec3013">CONTENTS</div>
+<div style="display:flex;align-items:flex-end;gap:32px;border-bottom:4px solid #201e1d;padding-bottom:20px;margin-top:14px">
+<div style="font:800 84px/0.9 Archivo;letter-spacing:-.02em;text-transform:uppercase">What we wireframed</div>
+</div></div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:56px 96px 0;border-top:2px solid #201e1d">
+<div style="padding:36px 40px 36px 0;border-bottom:2px solid #201e1d;border-right:2px solid #201e1d;padding-left:0px"><div style="font:700 24px ui-monospace,Menlo,monospace;color:#ec3013">01</div><div style="font:800 46px Archivo;text-transform:uppercase;margin-top:10px">Home</div><div style="font:400 26px/1.35 Archivo;color:rgba(32,30,29,.6);margin-top:12px">Hero, positioning, first work slab</div></div><div style="padding:36px 40px 36px 0;border-bottom:2px solid #201e1d;border-right:2px solid #201e1d;padding-left:40px"><div style="font:700 24px ui-monospace,Menlo,monospace;color:#ec3013">02</div><div style="font:800 46px Archivo;text-transform:uppercase;margin-top:10px">About</div><div style="font:400 26px/1.35 Archivo;color:rgba(32,30,29,.6);margin-top:12px">Bio, journey, credentials</div></div><div style="padding:36px 40px 36px 0;border-bottom:2px solid #201e1d;padding-left:40px"><div style="font:700 24px ui-monospace,Menlo,monospace;color:#ec3013">03</div><div style="font:800 46px Archivo;text-transform:uppercase;margin-top:10px">Services</div><div style="font:400 26px/1.35 Archivo;color:rgba(32,30,29,.6);margin-top:12px">Offer, process, pricing entry</div></div><div style="padding:36px 40px 36px 0;border-bottom:2px solid #201e1d;border-right:2px solid #201e1d;padding-left:0px"><div style="font:700 24px ui-monospace,Menlo,monospace;color:#ec3013">04</div><div style="font:800 46px Archivo;text-transform:uppercase;margin-top:10px">Playground</div><div style="font:400 26px/1.35 Archivo;color:rgba(32,30,29,.6);margin-top:12px">Experiments and scraps</div></div><div style="padding:36px 40px 36px 0;border-bottom:2px solid #201e1d;border-right:2px solid #201e1d;padding-left:40px"><div style="font:700 24px ui-monospace,Menlo,monospace;color:#ec3013">05</div><div style="font:800 46px Archivo;text-transform:uppercase;margin-top:10px">Journal</div><div style="font:400 26px/1.35 Archivo;color:rgba(32,30,29,.6);margin-top:12px">Writing index</div></div><div style="padding:36px 40px 36px 0;border-bottom:2px solid #201e1d;padding-left:40px"><div style="font:700 24px ui-monospace,Menlo,monospace;color:#ec3013">06</div><div style="font:800 46px Archivo;text-transform:uppercase;margin-top:10px">Contact</div><div style="font:400 26px/1.35 Archivo;color:rgba(32,30,29,.6);margin-top:12px">Enquiry and booking</div></div>
+</div></section>
+<section data-label="Direction A" data-screen-label="Direction A" data-speaker-notes="Direction A is the Modernist route: Archivo, bracket nav, hard rules, red used once." style="width:1920px;height:1080px;background:#201e1d;color:#201e1d;font-family:Archivo,sans-serif;box-sizing:border-box;overflow:hidden"><div style="height:100%;background:#201e1d;color:#fff;padding:96px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between">
+<div style="font:700 26px Archivo;letter-spacing:.2em;color:#ec3013">DIRECTION A</div>
+<div><div style="font:800 170px/0.85 Archivo;text-transform:uppercase;letter-spacing:-.03em">Modernist<br>grid</div>
+<div style="font:400 40px/1.3 Archivo;margin-top:36px;max-width:1200px;color:rgba(255,255,255,.75)">Oversized Archivo, bracket navigation, 2px rules, full-bleed work slabs. Red appears once per screen.</div></div>
+<div style="font:700 26px Archivo;letter-spacing:.1em">18 WIREFRAMES · 3 PER SCREEN</div></div></section>
+<section data-label="A · Home" data-screen-label="A · Home" data-speaker-notes="Three ways into the site: type slab, sticky column, black gate with slider." style="width:1920px;height:1080px;background:#f3f2f2;color:#201e1d;font-family:Archivo,sans-serif;box-sizing:border-box;overflow:hidden"><div style="padding:64px 96px 0"><div style="font:700 24px Archivo;letter-spacing:.18em;color:#ec3013">DIRECTION A · HOME</div>
+<div style="display:flex;align-items:flex-end;gap:32px;border-bottom:4px solid #201e1d;padding-bottom:20px;margin-top:14px">
+<div style="font:800 84px/0.9 Archivo;letter-spacing:-.02em;text-transform:uppercase">Home</div>
+<div style="font:400 26px/1.3 Archivo;color:rgba(32,30,29,.6);max-width:640px;margin-left:auto;text-align:right">Desktop above, mobile below each</div></div></div><div style="display:flex;gap:47px;padding:44px 96px 0;align-items:flex-start"><div style="display:flex;flex-direction:column;gap:16px;width:548.8px">
+<div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 24px ui-monospace,Menlo,monospace;background:#201e1d;color:#fff;padding:6px 12px">1a</span><span style="font:400 26px/1.25 Archivo;color:rgba(32,30,29,.72)">Type slab + portrait overlap (closest to reference)</span></div>
+<div style="width:548.8px;height:392px"><div style="transform:scale(0.98);transform-origin:top left;width:560px;height:400px"><div class="f" style="width:560px;height:400px">
+<div class="nv"><span>OLHA<br>LAZARIEVA</span><span class="nvi">[ ABOUT ]</span><span class="nvi">[ WORKS ]</span><span class="nvi">[ SERVICES ]</span><span class="nvi">[ CONNECT ]</span><span style="margin-left:auto;border-bottom:1px solid #201e1d">CONTACT ↗</span></div>
+<div style="padding:14px 18px 0"><span class="tag">1,618</span>
+<div class="hd" style="font-size:52px;margin-top:2px">Creative<br>Designer</div></div>
+<div style="display:flex;gap:16px;padding:12px 18px">
+<div style="flex:1;display:flex;flex-direction:column;gap:7px;padding-top:26px">
+<div class="b" style="width:70%"></div><div class="b" style="width:58%"></div><div class="b" style="width:64%"></div>
+<div style="margin-top:10px;font:700 9px Archivo;letter-spacing:.08em">SCROLL ↓</div></div>
+<div class="ph" style="width:150px;height:150px"></div>
+<div style="width:110px;display:flex;flex-direction:column;gap:6px;justify-content:flex-end"><div class="b" style="width:100%"></div><div class="b" style="width:80%"></div></div>
+</div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:56px;border-top:2px solid #201e1d;display:flex;align-items:center;gap:14px;padding:0 18px;background:#f3f2f2">
+<span class="tag">SELECTED WORK / 01</span><div class="b" style="flex:1"></div><span style="font:700 9px Archivo">FULL-BLEED SLAB →</span></div>
+</div></div></div>
+<div style="display:flex;gap:20px;align-items:flex-start;margin-top:6px">
+<div style="width:164.64px;height:294px;flex:none"><div style="transform:scale(0.98);transform-origin:top left;width:168px;height:300px"><div class="f mob">
+<div class="nv" style="gap:8px;padding:8px 10px"><span>OL</span><span style="margin-left:auto" class="nvi">MENU</span></div>
+<div style="padding:10px"><div class="hd" style="font-size:22px">Creative<br>Designer</div>
+<div class="ph" style="height:70px;margin:8px 0"></div>
+<div class="b" style="width:80%;margin-bottom:6px"></div><div class="b" style="width:60%"></div>
+<div style="margin-top:10px;border-top:2px solid #201e1d;padding-top:8px"><span class="tag">WORK 01</span><div class="ph" style="height:54px;margin-top:6px"></div></div></div>
+</div></div></div>
+<div style="font:400 22px/1.4 Archivo;color:rgba(32,30,29,.55);padding-top:6px">Mobile: stacked headline → portrait → slab list</div></div></div><div style="display:flex;flex-direction:column;gap:16px;width:548.8px">
+<div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 24px ui-monospace,Menlo,monospace;background:#201e1d;color:#fff;padding:6px 12px">1b</span><span style="font:400 26px/1.25 Archivo;color:rgba(32,30,29,.72)">Sticky identity column, slabs scroll past</span></div>
+<div style="width:548.8px;height:392px"><div style="transform:scale(0.98);transform-origin:top left;width:560px;height:400px"><div class="f" style="width:560px;height:400px">
+<div class="nv"><span>OLHA<br>LAZARIEVA</span><span class="nvi">[ ABOUT ]</span><span class="nvi">[ WORKS ]</span><span class="nvi">[ SERVICES ]</span><span style="margin-left:auto;border-bottom:1px solid #201e1d">CONTACT ↗</span></div>
+<div style="display:flex;height:calc(100% - 46px)">
+<div style="width:190px;border-right:2px solid #201e1d;padding:16px;display:flex;flex-direction:column;gap:8px">
+<div class="hd" style="font-size:30px">Product<br>Designer</div>
+<div class="b" style="width:90%;margin-top:6px"></div><div class="b" style="width:75%"></div><div class="b" style="width:82%"></div>
+<div style="margin-top:auto"><span class="tag">STICKY</span></div></div>
+<div style="flex:1">
+<div style="height:58%;border-bottom:2px solid #201e1d;position:relative"><div class="ph" style="height:100%"></div><div style="position:absolute;left:12px;bottom:10px;font:800 20px Archivo;text-transform:uppercase;background:#fff;padding:2px 6px">Project 01</div></div>
+<div style="height:42%;position:relative"><div class="ph" style="height:100%;--a:24deg"></div><div style="position:absolute;left:12px;bottom:10px;font:800 20px Archivo;text-transform:uppercase;background:#fff;padding:2px 6px">Project 02</div></div>
+</div></div>
+</div></div></div>
+<div style="display:flex;gap:20px;align-items:flex-start;margin-top:6px">
+<div style="width:164.64px;height:294px;flex:none"><div style="transform:scale(0.98);transform-origin:top left;width:168px;height:300px"><div class="f mob">
+<div class="nv" style="gap:8px;padding:8px 10px"><span>OL</span><span style="margin-left:auto" class="nvi">MENU</span></div>
+<div style="padding:10px;border-bottom:2px solid #201e1d"><div class="hd" style="font-size:22px">Product<br>Designer</div></div>
+<div class="ph" style="height:95px;border-bottom:2px solid #201e1d"></div>
+<div class="ph" style="height:95px;--a:20deg"></div>
+</div></div></div>
+<div style="font:400 22px/1.4 Archivo;color:rgba(32,30,29,.55);padding-top:6px">Mobile: identity collapses to a pinned header strip</div></div></div><div style="display:flex;flex-direction:column;gap:16px;width:548.8px">
+<div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 24px ui-monospace,Menlo,monospace;background:#201e1d;color:#fff;padding:6px 12px">1c</span><span style="font:400 26px/1.25 Archivo;color:rgba(32,30,29,.72)">Black gate + swatch slider strip</span></div>
+<div style="width:548.8px;height:392px"><div style="transform:scale(0.98);transform-origin:top left;width:560px;height:400px"><div class="f" style="width:560px;height:400px;background:#201e1d;color:#fff;border-color:#201e1d">
+<div class="nv" style="border-color:#fff;color:#fff"><span>OLHA<br>LAZARIEVA</span><span class="nvi" style="color:rgba(255,255,255,.7)">[ ABOUT ]</span><span class="nvi" style="color:rgba(255,255,255,.7)">[ WORKS ]</span><span class="nvi" style="color:rgba(255,255,255,.7)">[ SERVICES ]</span><span style="margin-left:auto;border-bottom:1px solid #fff">CONTACT ↗</span></div>
+<div style="padding:26px 18px 0;display:flex;align-items:flex-end;gap:12px"><div class="hd" style="font-size:44px">Design<br><span style="color:#6c6866">is not just</span></div><span class="tag" style="margin-bottom:8px">DSGN/2</span></div>
+<div style="position:absolute;left:0;right:0;bottom:0;padding:14px 0 16px;border-top:2px solid #fff">
+<div style="display:flex;gap:12px;padding:0 18px">
+<div class="ph" style="width:150px;height:96px;background:#3a3735"></div>
+<div class="ph" style="width:150px;height:96px;background:#3a3735"></div>
+<div class="ph" style="width:150px;height:96px;background:#3a3735"></div>
+<div class="ph" style="width:80px;height:96px;background:#3a3735"></div></div>
+<div style="display:flex;justify-content:space-between;padding:8px 18px 0;font:700 9px Archivo;letter-spacing:.1em"><span>← DRAG / SWATCH SLIDER</span><span>01 / 08</span></div></div>
+</div></div></div>
+<div style="display:flex;gap:20px;align-items:flex-start;margin-top:6px">
+<div style="width:164.64px;height:294px;flex:none"><div style="transform:scale(0.98);transform-origin:top left;width:168px;height:300px"><div class="f mob" style="background:#201e1d;color:#fff">
+<div class="nv" style="gap:8px;padding:8px 10px;border-color:#fff"><span>OL</span><span style="margin-left:auto" class="nvi">MENU</span></div>
+<div style="padding:10px"><div class="hd" style="font-size:24px">Design<br><span style="color:#6c6866">is not just</span></div></div>
+<div style="display:flex;gap:8px;padding:0 10px"><div class="ph" style="width:110px;height:120px;background:#3a3735"></div><div class="ph" style="width:60px;height:120px;background:#3a3735"></div></div>
+<div style="padding:8px 10px;font:700 8px Archivo;letter-spacing:.1em">01 / 08 →</div>
+</div></div></div>
+<div style="font:400 22px/1.4 Archivo;color:rgba(32,30,29,.55);padding-top:6px">Mobile: slider becomes a snap-scroll rail</div></div></div></div></section>
+<section data-label="A · About" data-screen-label="A · About" data-speaker-notes="About page options: statement slabs, dossier, portrait-led." style="width:1920px;height:1080px;background:#f3f2f2;color:#201e1d;font-family:Archivo,sans-serif;box-sizing:border-box;overflow:hidden"><div style="padding:64px 96px 0"><div style="font:700 24px Archivo;letter-spacing:.18em;color:#ec3013">DIRECTION A · ABOUT</div>
+<div style="display:flex;align-items:flex-end;gap:32px;border-bottom:4px solid #201e1d;padding-bottom:20px;margin-top:14px">
+<div style="font:800 84px/0.9 Archivo;letter-spacing:-.02em;text-transform:uppercase">About</div>
+<div style="font:400 26px/1.3 Archivo;color:rgba(32,30,29,.6);max-width:640px;margin-left:auto;text-align:right">Desktop above, mobile below each</div></div></div><div style="display:flex;gap:47px;padding:44px 96px 0;align-items:flex-start"><div style="display:flex;flex-direction:column;gap:16px;width:548.8px">
+<div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 24px ui-monospace,Menlo,monospace;background:#201e1d;color:#fff;padding:6px 12px">1d</span><span style="font:400 26px/1.25 Archivo;color:rgba(32,30,29,.72)">Statement slabs, numbered 2/5</span></div>
+<div style="width:548.8px;height:392px"><div style="transform:scale(0.98);transform-origin:top left;width:560px;height:400px"><div class="f" style="width:560px;height:400px">
+<div class="nv"><span>OLHA<br>LAZARIEVA</span><span class="nvi">[ ABOUT ]</span><span class="nvi">[ WORKS ]</span><span class="nvi">[ SERVICES ]</span><span style="margin-left:auto;border-bottom:1px solid #201e1d">CONTACT ↗</span></div>
+<div style="padding:6px 0 14px;text-align:center"><div class="hd" style="font-size:56px">About me</div></div>
+<div style="background:#201e1d;color:#fff;height:calc(100% - 46px - 84px);padding:12px 18px;position:relative;box-sizing:border-box">
+<div style="display:flex;justify-content:space-between;font:700 11px Archivo"><span>2/5</span><span class="nvi" style="color:#fff">FOR ME</span><span>DSGN/2</span></div>
+<div class="hd" style="font-size:34px;margin-top:18px">Design<br><span style="color:#6c6866">is not just</span></div>
+<div style="position:absolute;right:18px;bottom:12px" class="tag">SCROLL-PINNED SLABS</div></div>
+</div></div></div>
+<div style="display:flex;gap:20px;align-items:flex-start;margin-top:6px">
+<div style="width:164.64px;height:294px;flex:none"><div style="transform:scale(0.98);transform-origin:top left;width:168px;height:300px"><div class="f mob">
+<div class="nv" style="gap:8px;padding:8px 10px"><span>OL</span><span style="margin-left:auto" class="nvi">MENU</span></div>
+<div style="padding:8px 10px"><div class="hd" style="font-size:28px">About me</div></div>
+<div style="background:#201e1d;color:#fff;padding:10px;height:180px"><div style="font:700 10px Archivo">2/5</div><div class="hd" style="font-size:22px;margin-top:14px">Design<br><span style="color:#6c6866">is not just</span></div></div>
+</div></div></div>
+<div style="font:400 22px/1.4 Archivo;color:rgba(32,30,29,.55);padding-top:6px">Mobile: one slab per viewport, counter top-left</div></div></div><div style="display:flex;flex-direction:column;gap:16px;width:548.8px">
+<div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 24px ui-monospace,Menlo,monospace;background:#201e1d;color:#fff;padding:6px 12px">1e</span><span style="font:400 26px/1.25 Archivo;color:rgba(32,30,29,.72)">: bio left, ruled timeline right</span></div>
+<div style="width:548.8px;height:392px"><div style="transform:scale(0.98);transform-origin:top left;width:560px;height:400px"><div class="f" style="width:560px;height:400px">
+<div class="nv"><span>OLHA<br>LAZARIEVA</span><span class="nvi">[ ABOUT ]</span><span class="nvi">[ WORKS ]</span><span class="nvi">[ SERVICES ]</span><span style="margin-left:auto;border-bottom:1px solid #201e1d">CONTACT ↗</span></div>
+<div style="padding:14px 18px 0"><div class="hd" style="font-size:38px">About</div></div>
+<div style="display:flex;gap:20px;padding:14px 18px">
+<div style="flex:1.1;display:flex;flex-direction:column;gap:7px"><span class="tag">BIO</span>
+<div class="b" style="width:100%"></div><div class="b" style="width:96%"></div><div class="b" style="width:100%"></div><div class="b" style="width:70%"></div>
+<div class="ph" style="height:78px;margin-top:8px"></div></div>
+<div style="flex:1;display:flex;flex-direction:column"><span class="tag">EXPERIENCE</span>
+<div style="border-top:2px solid #201e1d;padding:7px 0;display:flex;gap:10px;margin-top:6px"><span style="font:700 9px Archivo">2022—</span><div class="b" style="flex:1"></div></div>
+<div style="border-top:1px solid #cfcccb;padding:7px 0;display:flex;gap:10px"><span style="font:700 9px Archivo">2019—</span><div class="b" style="flex:1"></div></div>
+<div style="border-top:1px solid #cfcccb;padding:7px 0;display:flex;gap:10px"><span style="font:700 9px Archivo">2016—</span><div class="b" style="flex:1"></div></div>
+<div style="border-top:1px solid #cfcccb;padding:7px 0;display:flex;gap:10px"><span style="font:700 9px Archivo">AWARDS</span><div class="b" style="flex:1"></div></div>
+</div></div>
+</div></div></div>
+<div style="display:flex;gap:20px;align-items:flex-start;margin-top:6px">
+<div style="width:164.64px;height:294px;flex:none"><div style="transform:scale(0.98);transform-origin:top left;width:168px;height:300px"><div class="f mob">
+<div class="nv" style="gap:8px;padding:8px 10px"><span>OL</span><span style="margin-left:auto" class="nvi">MENU</span></div>
+<div style="padding:10px"><div class="hd" style="font-size:24px">About</div>
+<div style="display:flex;flex-direction:column;gap:6px;margin:10px 0"><div class="b"></div><div class="b" style="width:85%"></div><div class="b" style="width:92%"></div></div>
+<div style="border-top:2px solid #201e1d;padding:6px 0"><div class="b" style="width:70%"></div></div>
+<div style="border-top:1px solid #cfcccb;padding:6px 0"><div class="b" style="width:60%"></div></div></div>
+</div></div></div>
+<div style="font:400 22px/1.4 Archivo;color:rgba(32,30,29,.55);padding-top:6px">Mobile: bio, then timeline as full-width rules</div></div></div><div style="display:flex;flex-direction:column;gap:16px;width:548.8px">
+<div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 24px ui-monospace,Menlo,monospace;background:#201e1d;color:#fff;padding:6px 12px">1f</span><span style="font:400 26px/1.25 Archivo;color:rgba(32,30,29,.72)">-led, facts row under</span></div>
+<div style="width:548.8px;height:392px"><div style="transform:scale(0.98);transform-origin:top left;width:560px;height:400px"><div class="f" style="width:560px;height:400px">
+<div class="nv"><span>OLHA<br>LAZARIEVA</span><span class="nvi">[ ABOUT ]</span><span class="nvi">[ WORKS ]</span><span class="nvi">[ SERVICES ]</span><span style="margin-left:auto;border-bottom:1px solid #201e1d">CONTACT ↗</span></div>
+<div class="ph" style="height:210px;--a:18deg"><div style="position:absolute;left:16px;bottom:14px"><div class="hd" style="font-size:36px;color:#201e1d">Olha<br>Lazarieva</div></div>
+<div style="position:absolute;right:14px;top:12px" class="tag">FULL-BLEED B/W PORTRAIT</div></div>
+<div style="display:flex;border-top:2px solid #201e1d;height:calc(100% - 46px - 210px)">
+<div style="flex:1;padding:12px;border-right:1px solid #cfcccb"><span class="tag">BASED</span><div class="b" style="width:70%;margin-top:8px"></div></div>
+<div style="flex:1;padding:12px;border-right:1px solid #cfcccb"><span class="tag">FOCUS</span><div class="b" style="width:80%;margin-top:8px"></div></div>
+<div style="flex:1.4;padding:12px"><span class="tag">MANIFESTO</span><div class="b" style="width:100%;margin-top:8px"></div><div class="b" style="width:78%;margin-top:6px"></div></div>
+</div>
+</div></div></div>
+<div style="display:flex;gap:20px;align-items:flex-start;margin-top:6px">
+<div style="width:164.64px;height:294px;flex:none"><div style="transform:scale(0.98);transform-origin:top left;width:168px;height:300px"><div class="f mob">
+<div class="nv" style="gap:8px;padding:8px 10px"><span>OL</span><span style="margin-left:auto" class="nvi">MENU</span></div>
+<div class="ph" style="height:140px;--a:20deg"></div>
+<div style="padding:10px;border-top:2px solid #201e1d"><div class="hd" style="font-size:20px">Olha<br>Lazarieva</div>
+<div class="b" style="width:80%;margin-top:10px"></div><div class="b" style="width:60%;margin-top:6px"></div></div>
+</div></div></div>
+<div style="font:400 22px/1.4 Archivo;color:rgba(32,30,29,.55);padding-top:6px">Mobile: portrait full-width, facts stack</div></div></div></div></section>
+<section data-label="A · Services" data-screen-label="A · Services" data-speaker-notes="Services: expanding rows, three packages, process rail." style="width:1920px;height:1080px;background:#f3f2f2;color:#201e1d;font-family:Archivo,sans-serif;box-sizing:border-box;overflow:hidden"><div style="padding:64px 96px 0"><div style="font:700 24px Archivo;letter-spacing:.18em;color:#ec3013">DIRECTION A · SERVICES</div>
+<div style="display:flex;align-items:flex-end;gap:32px;border-bottom:4px solid #201e1d;padding-bottom:20px;margin-top:14px">
+<div style="font:800 84px/0.9 Archivo;letter-spacing:-.02em;text-transform:uppercase">Services</div>
+<div style="font:400 26px/1.3 Archivo;color:rgba(32,30,29,.6);max-width:640px;margin-left:auto;text-align:right">Desktop above, mobile below each</div></div></div><div style="display:flex;gap:47px;padding:44px 96px 0;align-items:flex-start"><div style="display:flex;flex-direction:column;gap:16px;width:548.8px">
+<div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 24px ui-monospace,Menlo,monospace;background:#201e1d;color:#fff;padding:6px 12px">1g</span><span style="font:400 26px/1.25 Archivo;color:rgba(32,30,29,.72)">Numbered rows, expand in place</span></div>
+<div style="width:548.8px;height:392px"><div style="transform:scale(0.98);transform-origin:top left;width:560px;height:400px"><div class="f" style="width:560px;height:400px">
+<div class="nv"><span>OLHA<br>LAZARIEVA</span><span class="nvi">[ ABOUT ]</span><span class="nvi">[ WORKS ]</span><span class="nvi">[ SERVICES ]</span><span style="margin-left:auto;border-bottom:1px solid #201e1d">CONTACT ↗</span></div>
+<div style="padding:12px 18px 4px"><div class="hd" style="font-size:36px">Services</div></div>
+<div style="padding:0 18px">
+<div style="border-top:2px solid #201e1d;padding:12px 0;display:flex;align-items:baseline;gap:14px"><span class="tag">01</span><span class="hd" style="font-size:22px">Art direction</span><span style="margin-left:auto;font:700 14px Archivo;color:#ec3013">−</span></div>
+<div style="padding:0 0 12px 40px;display:flex;flex-direction:column;gap:6px"><div class="b" style="width:70%"></div><div class="b" style="width:55%"></div><span class="tag">DELIVERABLES / TIMELINE / FROM €</span></div>
+<div style="border-top:1px solid #cfcccb;padding:12px 0;display:flex;align-items:baseline;gap:14px"><span class="tag">02</span><span class="hd" style="font-size:22px">Web design (UX/UI)</span><span style="margin-left:auto;font:700 14px Archivo">+</span></div>
+<div style="border-top:1px solid #cfcccb;padding:12px 0;display:flex;align-items:baseline;gap:14px"><span class="tag">03</span><span class="hd" style="font-size:22px">Web development</span><span style="margin-left:auto;font:700 14px Archivo">+</span></div>
+</div>
+</div></div></div>
+<div style="display:flex;gap:20px;align-items:flex-start;margin-top:6px">
+<div style="width:164.64px;height:294px;flex:none"><div style="transform:scale(0.98);transform-origin:top left;width:168px;height:300px"><div class="f mob">
+<div class="nv" style="gap:8px;padding:8px 10px"><span>OL</span><span style="margin-left:auto" class="nvi">MENU</span></div>
+<div style="padding:10px"><div class="hd" style="font-size:22px">Services</div></div>
+<div style="padding:0 10px">
+<div style="border-top:2px solid #201e1d;padding:9px 0"><span class="tag">01</span><div class="hd" style="font-size:15px">Art direction</div></div>
+<div style="border-top:1px solid #cfcccb;padding:9px 0"><span class="tag">02</span><div class="hd" style="font-size:15px">Web design</div></div>
+<div style="border-top:1px solid #cfcccb;padding:9px 0"><span class="tag">03</span><div class="hd" style="font-size:15px">Development</div></div></div>
+</div></div></div>
+<div style="font:400 22px/1.4 Archivo;color:rgba(32,30,29,.55);padding-top:6px">Mobile: same rows, tap to expand</div></div></div><div style="display:flex;flex-direction:column;gap:16px;width:548.8px">
+<div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 24px ui-monospace,Menlo,monospace;background:#201e1d;color:#fff;padding:6px 12px">1h</span><span style="font:400 26px/1.25 Archivo;color:rgba(32,30,29,.72)">Three packages, ruled cells</span></div>
+<div style="width:548.8px;height:392px"><div style="transform:scale(0.98);transform-origin:top left;width:560px;height:400px"><div class="f" style="width:560px;height:400px">
+<div class="nv"><span>OLHA<br>LAZARIEVA</span><span class="nvi">[ ABOUT ]</span><span class="nvi">[ WORKS ]</span><span class="nvi">[ SERVICES ]</span><span style="margin-left:auto;border-bottom:1px solid #201e1d">CONTACT ↗</span></div>
+<div style="padding:12px 18px"><div class="hd" style="font-size:32px">What I do</div></div>
+<div style="display:flex;border-top:2px solid #201e1d;height:calc(100% - 46px - 66px)">
+<div style="flex:1;border-right:1px solid #cfcccb;padding:14px;display:flex;flex-direction:column;gap:7px"><span class="tag">01</span><span class="hd" style="font-size:17px">Art direction</span><div class="b" style="width:90%"></div><div class="b" style="width:70%"></div><div class="b" style="width:80%"></div><div style="margin-top:auto;border-top:2px solid #201e1d;padding-top:8px;font:700 9px Archivo">FROM €X</div></div>
+<div style="flex:1;border-right:1px solid #cfcccb;padding:14px;display:flex;flex-direction:column;gap:7px;background:#f3f2f2"><span class="tag">02</span><span class="hd" style="font-size:17px">Web design</span><div class="b" style="width:85%"></div><div class="b" style="width:92%"></div><div class="b" style="width:60%"></div><div style="margin-top:auto;border-top:2px solid #201e1d;padding-top:8px;font:700 9px Archivo">FROM €X</div></div>
+<div style="flex:1;padding:14px;display:flex;flex-direction:column;gap:7px"><span class="tag">03</span><span class="hd" style="font-size:17px">Development</span><div class="b" style="width:75%"></div><div class="b" style="width:88%"></div><div style="margin-top:auto;border-top:2px solid #201e1d;padding-top:8px;font:700 9px Archivo">FROM €X</div></div>
+</div>
+</div></div></div>
+<div style="display:flex;gap:20px;align-items:flex-start;margin-top:6px">
+<div style="width:164.64px;height:294px;flex:none"><div style="transform:scale(0.98);transform-origin:top left;width:168px;height:300px"><div class="f mob">
+<div class="nv" style="gap:8px;padding:8px 10px"><span>OL</span><span style="margin-left:auto" class="nvi">MENU</span></div>
+<div style="padding:10px"><div class="hd" style="font-size:20px">What I do</div></div>
+<div style="border-top:2px solid #201e1d;padding:10px"><span class="tag">01</span><div class="hd" style="font-size:14px">Art direction</div><div class="b" style="width:80%;margin-top:6px"></div></div>
+<div style="border-top:1px solid #cfcccb;padding:10px;background:#f3f2f2"><span class="tag">02</span><div class="hd" style="font-size:14px">Web design</div><div class="b" style="width:70%;margin-top:6px"></div></div>
+</div></div></div>
+<div style="font:400 22px/1.4 Archivo;color:rgba(32,30,29,.55);padding-top:6px">Mobile: cells stack full-width</div></div></div><div style="display:flex;flex-direction:column;gap:16px;width:548.8px">
+<div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 24px ui-monospace,Menlo,monospace;background:#201e1d;color:#fff;padding:6px 12px">1i</span><span style="font:400 26px/1.25 Archivo;color:rgba(32,30,29,.72)">Process rail across the top</span></div>
+<div style="width:548.8px;height:392px"><div style="transform:scale(0.98);transform-origin:top left;width:560px;height:400px"><div class="f" style="width:560px;height:400px">
+<div class="nv"><span>OLHA<br>LAZARIEVA</span><span class="nvi">[ ABOUT ]</span><span class="nvi">[ WORKS ]</span><span class="nvi">[ SERVICES ]</span><span style="margin-left:auto;border-bottom:1px solid #201e1d">CONTACT ↗</span></div>
+<div style="display:flex;border-bottom:2px solid #201e1d">
+<div style="flex:1;padding:12px;border-right:1px solid #cfcccb"><span class="tag">STEP 01</span><div class="b" style="width:80%;margin-top:7px"></div></div>
+<div style="flex:1;padding:12px;border-right:1px solid #cfcccb"><span class="tag">STEP 02</span><div class="b" style="width:70%;margin-top:7px"></div></div>
+<div style="flex:1;padding:12px;border-right:1px solid #cfcccb"><span class="tag">STEP 03</span><div class="b" style="width:85%;margin-top:7px"></div></div>
+<div style="flex:1;padding:12px"><span class="tag">STEP 04</span><div class="b" style="width:60%;margin-top:7px"></div></div>
+</div>
+<div style="display:flex;height:calc(100% - 46px - 62px)">
+<div style="flex:1.2;padding:16px 18px"><div class="hd" style="font-size:34px">How we<br>work</div><div class="b" style="width:80%;margin-top:12px"></div><div class="b" style="width:64%;margin-top:6px"></div>
+<div style="margin-top:14px;display:inline-block;background:#ec3013;color:#fff;font:700 10px Archivo;padding:8px 14px">START A PROJECT</div></div>
+<div style="flex:1;border-left:2px solid #201e1d;padding:14px;display:flex;flex-direction:column;gap:9px"><span class="tag">SERVICES</span>
+<div class="b" style="width:80%"></div><div class="b" style="width:70%"></div><div class="b" style="width:88%"></div><div class="b" style="width:55%"></div></div>
+</div>
+</div></div></div>
+<div style="display:flex;gap:20px;align-items:flex-start;margin-top:6px">
+<div style="width:164.64px;height:294px;flex:none"><div style="transform:scale(0.98);transform-origin:top left;width:168px;height:300px"><div class="f mob">
+<div class="nv" style="gap:8px;padding:8px 10px"><span>OL</span><span style="margin-left:auto" class="nvi">MENU</span></div>
+<div style="display:flex;gap:8px;padding:10px;border-bottom:2px solid #201e1d"><div style="width:70px"><span class="tag">01</span><div class="b" style="margin-top:5px"></div></div><div style="width:70px"><span class="tag">02</span><div class="b" style="margin-top:5px"></div></div><div style="width:40px"><span class="tag">03</span></div></div>
+<div style="padding:10px"><div class="hd" style="font-size:20px">How we work</div><div class="b" style="width:80%;margin-top:10px"></div>
+<div style="margin-top:12px;background:#ec3013;color:#fff;font:700 9px Archivo;padding:8px 10px;display:inline-block">START A PROJECT</div></div>
+</div></div></div>
+<div style="font:400 22px/1.4 Archivo;color:rgba(32,30,29,.55);padding-top:6px">Mobile: steps become a horizontal rail</div></div></div></div></section>
+<section data-label="A · Playground" data-screen-label="A · Playground" data-speaker-notes="Playground: dense grid, swatch slider, hover index." style="width:1920px;height:1080px;background:#f3f2f2;color:#201e1d;font-family:Archivo,sans-serif;box-sizing:border-box;overflow:hidden"><div style="padding:64px 96px 0"><div style="font:700 24px Archivo;letter-spacing:.18em;color:#ec3013">DIRECTION A · PLAYGROUND</div>
+<div style="display:flex;align-items:flex-end;gap:32px;border-bottom:4px solid #201e1d;padding-bottom:20px;margin-top:14px">
+<div style="font:800 84px/0.9 Archivo;letter-spacing:-.02em;text-transform:uppercase">Playground</div>
+<div style="font:400 26px/1.3 Archivo;color:rgba(32,30,29,.6);max-width:640px;margin-left:auto;text-align:right">Desktop above, mobile below each</div></div></div><div style="display:flex;gap:47px;padding:44px 96px 0;align-items:flex-start"><div style="display:flex;flex-direction:column;gap:16px;width:548.8px">
+<div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 24px ui-monospace,Menlo,monospace;background:#201e1d;color:#fff;padding:6px 12px">1j</span><span style="font:400 26px/1.25 Archivo;color:rgba(32,30,29,.72)">Dense grid, mixed cell sizes</span></div>
+<div style="width:548.8px;height:392px"><div style="transform:scale(0.98);transform-origin:top left;width:560px;height:400px"><div class="f" style="width:560px;height:400px">
+<div class="nv"><span>OLHA<br>LAZARIEVA</span><span class="nvi">[ ABOUT ]</span><span class="nvi">[ WORKS ]</span><span class="nvi">[ PLAYGROUND ]</span><span style="margin-left:auto;border-bottom:1px solid #201e1d">CONTACT ↗</span></div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;padding:10px 18px"><div class="hd" style="font-size:30px">Playground</div><span class="tag">48 EXPERIMENTS</span></div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:0 18px">
+<div class="ph" style="height:78px;grid-column:span 2"></div><div class="ph" style="height:78px"></div><div class="ph" style="height:78px"></div>
+<div class="ph" style="height:78px"></div><div class="ph" style="height:78px"></div><div class="ph" style="height:78px;grid-column:span 2"></div>
+<div class="ph" style="height:60px"></div><div class="ph" style="height:60px"></div><div class="ph" style="height:60px"></div><div class="ph" style="height:60px"></div>
+</div>
+</div></div></div>
+<div style="display:flex;gap:20px;align-items:flex-start;margin-top:6px">
+<div style="width:164.64px;height:294px;flex:none"><div style="transform:scale(0.98);transform-origin:top left;width:168px;height:300px"><div class="f mob">
+<div class="nv" style="gap:8px;padding:8px 10px"><span>OL</span><span style="margin-left:auto" class="nvi">MENU</span></div>
+<div style="padding:10px"><div class="hd" style="font-size:20px">Playground</div></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:0 10px"><div class="ph" style="height:66px"></div><div class="ph" style="height:66px"></div><div class="ph" style="height:66px"></div><div class="ph" style="height:66px"></div></div>
+</div></div></div>
+<div style="font:400 22px/1.4 Archivo;color:rgba(32,30,29,.55);padding-top:6px">Mobile: 2-up grid</div></div></div><div style="display:flex;flex-direction:column;gap:16px;width:548.8px">
+<div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 24px ui-monospace,Menlo,monospace;background:#201e1d;color:#fff;padding:6px 12px">1k</span><span style="font:400 26px/1.25 Archivo;color:rgba(32,30,29,.72)">Swatch slider — drag through experiments</span></div>
+<div style="width:548.8px;height:392px"><div style="transform:scale(0.98);transform-origin:top left;width:560px;height:400px"><div class="f" style="width:560px;height:400px">
+<div class="nv"><span>OLHA<br>LAZARIEVA</span><span class="nvi">[ ABOUT ]</span><span class="nvi">[ WORKS ]</span><span class="nvi">[ PLAYGROUND ]</span><span style="margin-left:auto;border-bottom:1px solid #201e1d">CONTACT ↗</span></div>
+<div style="padding:14px 18px"><div class="hd" style="font-size:30px">Playground</div><div class="b" style="width:44%;margin-top:8px"></div></div>
+<div style="display:flex;gap:10px;padding:0 0 0 18px;align-items:flex-end">
+<div class="ph" style="width:120px;height:150px"></div>
+<div class="ph" style="width:170px;height:190px;--a:26deg"><div style="position:absolute;left:8px;bottom:8px;background:#ec3013;color:#fff;font:700 8px Archivo;padding:4px 6px">ACTIVE</div></div>
+<div class="ph" style="width:120px;height:150px"></div>
+<div class="ph" style="width:120px;height:150px"></div>
+</div>
+<div style="position:absolute;left:18px;right:18px;bottom:12px;display:flex;align-items:center;gap:12px">
+<div style="flex:1;height:2px;background:#cfcccb;position:relative"><div style="position:absolute;left:0;top:0;width:38%;height:2px;background:#ec3013"></div></div>
+<span style="font:700 9px Archivo">03 / 12 · DRAG</span></div>
+</div></div></div>
+<div style="display:flex;gap:20px;align-items:flex-start;margin-top:6px">
+<div style="width:164.64px;height:294px;flex:none"><div style="transform:scale(0.98);transform-origin:top left;width:168px;height:300px"><div class="f mob">
+<div class="nv" style="gap:8px;padding:8px 10px"><span>OL</span><span style="margin-left:auto" class="nvi">MENU</span></div>
+<div style="padding:10px"><div class="hd" style="font-size:20px">Playground</div></div>
+<div style="display:flex;gap:8px;padding:0 10px"><div class="ph" style="width:118px;height:150px"></div><div class="ph" style="width:40px;height:150px"></div></div>
+<div style="padding:10px;display:flex;gap:8px;align-items:center"><div style="flex:1;height:2px;background:#cfcccb"><div style="width:40%;height:2px;background:#ec3013"></div></div><span style="font:700 8px Archivo">03/12</span></div>
+</div></div></div>
+<div style="font:400 22px/1.4 Archivo;color:rgba(32,30,29,.55);padding-top:6px">Mobile: snap rail, one swatch per screen</div></div></div><div style="display:flex;flex-direction:column;gap:16px;width:548.8px">
+<div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 24px ui-monospace,Menlo,monospace;background:#201e1d;color:#fff;padding:6px 12px">1l</span><span style="font:400 26px/1.25 Archivo;color:rgba(32,30,29,.72)">Index list, hover shows the piece</span></div>
+<div style="width:548.8px;height:392px"><div style="transform:scale(0.98);transform-origin:top left;width:560px;height:400px"><div class="f" style="width:560px;height:400px">
+<div class="nv"><span>OLHA<br>LAZARIEVA</span><span class="nvi">[ ABOUT ]</span><span class="nvi">[ WORKS ]</span><span class="nvi">[ PLAYGROUND ]</span><span style="margin-left:auto;border-bottom:1px solid #201e1d">CONTACT ↗</span></div>
+<div style="display:flex;height:calc(100% - 46px)">
+<div style="flex:1.1;padding:14px 0 0">
+<div style="padding:0 18px 10px"><div class="hd" style="font-size:26px">Index</div></div>
+<div style="border-top:2px solid #201e1d;padding:9px 18px;display:flex;gap:10px;background:#f3f2f2"><span class="tag">001</span><div class="b" style="width:60%"></div></div>
+<div style="border-top:1px solid #cfcccb;padding:9px 18px;display:flex;gap:10px"><span class="tag">002</span><div class="b" style="width:48%"></div></div>
+<div style="border-top:1px solid #cfcccb;padding:9px 18px;display:flex;gap:10px"><span class="tag">003</span><div class="b" style="width:66%"></div></div>
+<div style="border-top:1px solid #cfcccb;padding:9px 18px;display:flex;gap:10px"><span class="tag">004</span><div class="b" style="width:54%"></div></div>
+<div style="border-top:1px solid #cfcccb;padding:9px 18px;display:flex;gap:10px"><span class="tag">005</span><div class="b" style="width:60%"></div></div>
+</div>
+<div style="width:210px;border-left:2px solid #201e1d;padding:14px;display:flex;flex-direction:column;gap:8px"><span class="tag">HOVER PREVIEW</span><div class="ph" style="height:150px"></div><div class="b" style="width:70%"></div></div>
+</div>
+</div></div></div>
+<div style="display:flex;gap:20px;align-items:flex-start;margin-top:6px">
+<div style="width:164.64px;height:294px;flex:none"><div style="transform:scale(0.98);transform-origin:top left;width:168px;height:300px"><div class="f mob">
+<div class="nv" style="gap:8px;padding:8px 10px"><span>OL</span><span style="margin-left:auto" class="nvi">MENU</span></div>
+<div style="padding:10px"><div class="hd" style="font-size:20px">Index</div></div>
+<div style="border-top:2px solid #201e1d;padding:8px 10px;display:flex;gap:8px;align-items:center"><div class="ph" style="width:38px;height:30px"></div><div class="b" style="flex:1"></div></div>
+<div style="border-top:1px solid #cfcccb;padding:8px 10px;display:flex;gap:8px;align-items:center"><div class="ph" style="width:38px;height:30px"></div><div class="b" style="flex:1"></div></div>
+<div style="border-top:1px solid #cfcccb;padding:8px 10px;display:flex;gap:8px;align-items:center"><div class="ph" style="width:38px;height:30px"></div><div class="b" style="flex:1"></div></div>
+</div></div></div>
+<div style="font:400 22px/1.4 Archivo;color:rgba(32,30,29,.55);padding-top:6px">Mobile: list with inline thumbnails</div></div></div></div></section>
+<section data-label="A · Journal" data-screen-label="A · Journal" data-speaker-notes="Journal: ruled index, featured slab, card grid." style="width:1920px;height:1080px;background:#f3f2f2;color:#201e1d;font-family:Archivo,sans-serif;box-sizing:border-box;overflow:hidden"><div style="padding:64px 96px 0"><div style="font:700 24px Archivo;letter-spacing:.18em;color:#ec3013">DIRECTION A · JOURNAL</div>
+<div style="display:flex;align-items:flex-end;gap:32px;border-bottom:4px solid #201e1d;padding-bottom:20px;margin-top:14px">
+<div style="font:800 84px/0.9 Archivo;letter-spacing:-.02em;text-transform:uppercase">Journal</div>
+<div style="font:400 26px/1.3 Archivo;color:rgba(32,30,29,.6);max-width:640px;margin-left:auto;text-align:right">Desktop above, mobile below each</div></div></div><div style="display:flex;gap:47px;padding:44px 96px 0;align-items:flex-start"><div style="display:flex;flex-direction:column;gap:16px;width:548.8px">
+<div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 24px ui-monospace,Menlo,monospace;background:#201e1d;color:#fff;padding:6px 12px">1m</span><span style="font:400 26px/1.25 Archivo;color:rgba(32,30,29,.72)">Ruled index: date / title / tag</span></div>
+<div style="width:548.8px;height:392px"><div style="transform:scale(0.98);transform-origin:top left;width:560px;height:400px"><div class="f" style="width:560px;height:400px">
+<div class="nv"><span>OLHA<br>LAZARIEVA</span><span class="nvi">[ ABOUT ]</span><span class="nvi">[ WORKS ]</span><span class="nvi">[ JOURNAL ]</span><span style="margin-left:auto;border-bottom:1px solid #201e1d">CONTACT ↗</span></div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;padding:12px 18px"><div class="hd" style="font-size:32px">Journal</div><span class="tag">ALL / DESIGN / PROCESS</span></div>
+<div style="padding:0 18px">
+<div style="border-top:2px solid #201e1d;padding:11px 0;display:flex;gap:14px;align-items:baseline"><span style="font:700 9px Archivo;width:60px">2026.04</span><div class="hd" style="font-size:18px;flex:1">Article title goes here</div><span class="tag">PROCESS</span></div>
+<div style="border-top:1px solid #cfcccb;padding:11px 0;display:flex;gap:14px;align-items:baseline"><span style="font:700 9px Archivo;width:60px">2026.02</span><div class="b" style="flex:1;height:12px"></div><span class="tag">DESIGN</span></div>
+<div style="border-top:1px solid #cfcccb;padding:11px 0;display:flex;gap:14px;align-items:baseline"><span style="font:700 9px Archivo;width:60px">2025.11</span><div class="b" style="flex:1;height:12px"></div><span class="tag">NOTES</span></div>
+<div style="border-top:1px solid #cfcccb;padding:11px 0;display:flex;gap:14px;align-items:baseline"><span style="font:700 9px Archivo;width:60px">2025.09</span><div class="b" style="flex:1;height:12px"></div><span class="tag">DESIGN</span></div>
+</div>
+</div></div></div>
+<div style="display:flex;gap:20px;align-items:flex-start;margin-top:6px">
+<div style="width:164.64px;height:294px;flex:none"><div style="transform:scale(0.98);transform-origin:top left;width:168px;height:300px"><div class="f mob">
+<div class="nv" style="gap:8px;padding:8px 10px"><span>OL</span><span style="margin-left:auto" class="nvi">MENU</span></div>
+<div style="padding:10px"><div class="hd" style="font-size:20px">Journal</div></div>
+<div style="border-top:2px solid #201e1d;padding:9px 10px"><span class="tag">2026.04 · PROCESS</span><div class="hd" style="font-size:14px;margin-top:4px">Article title</div></div>
+<div style="border-top:1px solid #cfcccb;padding:9px 10px"><span class="tag">2026.02 · DESIGN</span><div class="b" style="width:80%;margin-top:5px"></div></div>
+</div></div></div>
+<div style="font:400 22px/1.4 Archivo;color:rgba(32,30,29,.55);padding-top:6px">Mobile: date above title, tag inline</div></div></div><div style="display:flex;flex-direction:column;gap:16px;width:548.8px">
+<div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 24px ui-monospace,Menlo,monospace;background:#201e1d;color:#fff;padding:6px 12px">1n</span><span style="font:400 26px/1.25 Archivo;color:rgba(32,30,29,.72)">Featured slab + list beneath</span></div>
+<div style="width:548.8px;height:392px"><div style="transform:scale(0.98);transform-origin:top left;width:560px;height:400px"><div class="f" style="width:560px;height:400px">
+<div class="nv"><span>OLHA<br>LAZARIEVA</span><span class="nvi">[ ABOUT ]</span><span class="nvi">[ WORKS ]</span><span class="nvi">[ JOURNAL ]</span><span style="margin-left:auto;border-bottom:1px solid #201e1d">CONTACT ↗</span></div>
+<div style="display:flex;border-bottom:2px solid #201e1d">
+<div class="ph" style="width:250px;height:170px"></div>
+<div style="flex:1;padding:14px;display:flex;flex-direction:column;gap:8px"><span class="tag">FEATURED · 2026.04</span><div class="hd" style="font-size:24px">The brief is<br>the design</div><div class="b" style="width:90%"></div><div class="b" style="width:70%"></div><span style="margin-top:auto;font:700 9px Archivo;border-bottom:1px solid #201e1d;align-self:flex-start">READ ↗</span></div>
+</div>
+<div style="display:flex">
+<div style="flex:1;padding:12px;border-right:1px solid #cfcccb"><span class="tag">2026.02</span><div class="b" style="width:90%;margin-top:7px"></div><div class="b" style="width:60%;margin-top:5px"></div></div>
+<div style="flex:1;padding:12px;border-right:1px solid #cfcccb"><span class="tag">2025.11</span><div class="b" style="width:80%;margin-top:7px"></div><div class="b" style="width:70%;margin-top:5px"></div></div>
+<div style="flex:1;padding:12px"><span class="tag">2025.09</span><div class="b" style="width:85%;margin-top:7px"></div><div class="b" style="width:55%;margin-top:5px"></div></div>
+</div>
+</div></div></div>
+<div style="display:flex;gap:20px;align-items:flex-start;margin-top:6px">
+<div style="width:164.64px;height:294px;flex:none"><div style="transform:scale(0.98);transform-origin:top left;width:168px;height:300px"><div class="f mob">
+<div class="nv" style="gap:8px;padding:8px 10px"><span>OL</span><span style="margin-left:auto" class="nvi">MENU</span></div>
+<div class="ph" style="height:90px"></div>
+<div style="padding:9px 10px;border-bottom:2px solid #201e1d"><span class="tag">FEATURED</span><div class="hd" style="font-size:15px;margin-top:4px">The brief is the design</div></div>
+<div style="padding:9px 10px"><span class="tag">2026.02</span><div class="b" style="width:85%;margin-top:5px"></div></div>
+</div></div></div>
+<div style="font:400 22px/1.4 Archivo;color:rgba(32,30,29,.55);padding-top:6px">Mobile: featured card, then single-column list</div></div></div><div style="display:flex;flex-direction:column;gap:16px;width:548.8px">
+<div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 24px ui-monospace,Menlo,monospace;background:#201e1d;color:#fff;padding:6px 12px">1o</span><span style="font:400 26px/1.25 Archivo;color:rgba(32,30,29,.72)">-up card grid</span></div>
+<div style="width:548.8px;height:392px"><div style="transform:scale(0.98);transform-origin:top left;width:560px;height:400px"><div class="f" style="width:560px;height:400px">
+<div class="nv"><span>OLHA<br>LAZARIEVA</span><span class="nvi">[ ABOUT ]</span><span class="nvi">[ WORKS ]</span><span class="nvi">[ JOURNAL ]</span><span style="margin-left:auto;border-bottom:1px solid #201e1d">CONTACT ↗</span></div>
+<div style="padding:12px 18px"><div class="hd" style="font-size:30px">Journal</div></div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 18px">
+<div><div class="ph" style="height:90px"></div><span class="tag" style="display:block;margin-top:7px">2026.04</span><div class="b" style="width:90%;margin-top:5px"></div><div class="b" style="width:60%;margin-top:4px"></div></div>
+<div><div class="ph" style="height:90px;--a:24deg"></div><span class="tag" style="display:block;margin-top:7px">2026.02</span><div class="b" style="width:80%;margin-top:5px"></div><div class="b" style="width:70%;margin-top:4px"></div></div>
+<div><div class="ph" style="height:90px;--a:40deg"></div><span class="tag" style="display:block;margin-top:7px">2025.11</span><div class="b" style="width:85%;margin-top:5px"></div><div class="b" style="width:50%;margin-top:4px"></div></div>
+</div>
+<div style="position:absolute;left:18px;right:18px;bottom:14px;border-top:2px solid #201e1d;padding-top:8px;display:flex;justify-content:space-between;font:700 9px Archivo"><span>OLDER POSTS</span><span>→</span></div>
+</div></div></div>
+<div style="display:flex;gap:20px;align-items:flex-start;margin-top:6px">
+<div style="width:164.64px;height:294px;flex:none"><div style="transform:scale(0.98);transform-origin:top left;width:168px;height:300px"><div class="f mob">
+<div class="nv" style="gap:8px;padding:8px 10px"><span>OL</span><span style="margin-left:auto" class="nvi">MENU</span></div>
+<div style="padding:10px"><div class="hd" style="font-size:20px">Journal</div>
+<div class="ph" style="height:80px;margin-top:8px"></div><span class="tag" style="display:block;margin-top:6px">2026.04</span><div class="b" style="width:85%;margin-top:5px"></div>
+<div class="ph" style="height:60px;margin-top:12px;--a:22deg"></div></div>
+</div></div></div>
+<div style="font:400 22px/1.4 Archivo;color:rgba(32,30,29,.55);padding-top:6px">Mobile: one card per row</div></div></div></div></section>
+<section data-label="A · Contact" data-screen-label="A · Contact" data-speaker-notes="Contact: mail-to poster, form plus availability, red booking poster." style="width:1920px;height:1080px;background:#f3f2f2;color:#201e1d;font-family:Archivo,sans-serif;box-sizing:border-box;overflow:hidden"><div style="padding:64px 96px 0"><div style="font:700 24px Archivo;letter-spacing:.18em;color:#ec3013">DIRECTION A · CONTACT</div>
+<div style="display:flex;align-items:flex-end;gap:32px;border-bottom:4px solid #201e1d;padding-bottom:20px;margin-top:14px">
+<div style="font:800 84px/0.9 Archivo;letter-spacing:-.02em;text-transform:uppercase">Contact</div>
+<div style="font:400 26px/1.3 Archivo;color:rgba(32,30,29,.6);max-width:640px;margin-left:auto;text-align:right">Desktop above, mobile below each</div></div></div><div style="display:flex;gap:47px;padding:44px 96px 0;align-items:flex-start"><div style="display:flex;flex-direction:column;gap:16px;width:548.8px">
+<div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 24px ui-monospace,Menlo,monospace;background:#201e1d;color:#fff;padding:6px 12px">1p</span><span style="font:400 26px/1.25 Archivo;color:rgba(32,30,29,.72)">-to poster, no form</span></div>
+<div style="width:548.8px;height:392px"><div style="transform:scale(0.98);transform-origin:top left;width:560px;height:400px"><div class="f" style="width:560px;height:400px">
+<div class="nv"><span>OLHA<br>LAZARIEVA</span><span class="nvi">[ ABOUT ]</span><span class="nvi">[ WORKS ]</span><span class="nvi">[ CONNECT ]</span><span style="margin-left:auto;border-bottom:1px solid #201e1d">CONTACT ↗</span></div>
+<div style="padding:34px 18px 0"><span class="tag">AVAILABLE FROM Q4</span>
+<div class="hd" style="font-size:44px;margin-top:8px">Let's<br>work</div>
+<div style="margin-top:16px;font:700 20px Archivo;border-bottom:2px solid #ec3013;display:inline-block;color:#ec3013">hello@domain.com</div></div>
+<div style="position:absolute;left:0;right:0;bottom:0;border-top:2px solid #201e1d;display:flex">
+<div style="flex:1;padding:12px;border-right:1px solid #cfcccb;font:700 9px Archivo">INSTAGRAM ↗</div>
+<div style="flex:1;padding:12px;border-right:1px solid #cfcccb;font:700 9px Archivo">LINKEDIN ↗</div>
+<div style="flex:1;padding:12px;border-right:1px solid #cfcccb;font:700 9px Archivo">BEHANCE ↗</div>
+<div style="flex:1;padding:12px;font:700 9px Archivo">CV (PDF) ↗</div>
+</div>
+</div></div></div>
+<div style="display:flex;gap:20px;align-items:flex-start;margin-top:6px">
+<div style="width:164.64px;height:294px;flex:none"><div style="transform:scale(0.98);transform-origin:top left;width:168px;height:300px"><div class="f mob">
+<div class="nv" style="gap:8px;padding:8px 10px"><span>OL</span><span style="margin-left:auto" class="nvi">MENU</span></div>
+<div style="padding:14px 10px"><span class="tag">AVAILABLE Q4</span><div class="hd" style="font-size:26px;margin-top:6px">Let's<br>work</div>
+<div style="margin-top:12px;font:700 13px Archivo;color:#ec3013;border-bottom:2px solid #ec3013;display:inline-block">hello@domain.com</div></div>
+<div style="border-top:2px solid #201e1d;padding:9px 10px;font:700 9px Archivo">INSTAGRAM ↗</div>
+<div style="border-top:1px solid #cfcccb;padding:9px 10px;font:700 9px Archivo">LINKEDIN ↗</div>
+</div></div></div>
+<div style="font:400 22px/1.4 Archivo;color:rgba(32,30,29,.55);padding-top:6px">Mobile: address as the tap target, links stack</div></div></div><div style="display:flex;flex-direction:column;gap:16px;width:548.8px">
+<div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 24px ui-monospace,Menlo,monospace;background:#201e1d;color:#fff;padding:6px 12px">1q</span><span style="font:400 26px/1.25 Archivo;color:rgba(32,30,29,.72)">Form left, availability right</span></div>
+<div style="width:548.8px;height:392px"><div style="transform:scale(0.98);transform-origin:top left;width:560px;height:400px"><div class="f" style="width:560px;height:400px">
+<div class="nv"><span>OLHA<br>LAZARIEVA</span><span class="nvi">[ ABOUT ]</span><span class="nvi">[ WORKS ]</span><span class="nvi">[ CONNECT ]</span><span style="margin-left:auto;border-bottom:1px solid #201e1d">CONTACT ↗</span></div>
+<div style="display:flex;height:calc(100% - 46px)">
+<div style="flex:1.3;padding:16px 18px;display:flex;flex-direction:column;gap:10px">
+<div class="hd" style="font-size:26px">Start a project</div>
+<div><span class="tag">NAME</span><div style="border:2px solid #201e1d;height:26px;margin-top:4px"></div></div>
+<div><span class="tag">EMAIL</span><div style="border:2px solid #201e1d;height:26px;margin-top:4px"></div></div>
+<div><span class="tag">BRIEF</span><div style="border:2px solid #201e1d;height:56px;margin-top:4px"></div></div>
+<div style="background:#ec3013;color:#fff;font:700 10px Archivo;padding:9px 14px;align-self:flex-start">SEND ↗</div>
+</div>
+<div style="width:190px;border-left:2px solid #201e1d;padding:14px;display:flex;flex-direction:column;gap:10px">
+<span class="tag">AVAILABILITY</span><div class="b" style="width:90%"></div><div class="b" style="width:60%"></div>
+<div style="border-top:2px solid #201e1d;padding-top:9px;margin-top:4px"><span class="tag">ELSEWHERE</span>
+<div style="font:700 9px Archivo;margin-top:7px">INSTAGRAM ↗</div><div style="font:700 9px Archivo;margin-top:5px">LINKEDIN ↗</div><div style="font:700 9px Archivo;margin-top:5px">BEHANCE ↗</div></div>
+</div></div>
+</div></div></div>
+<div style="display:flex;gap:20px;align-items:flex-start;margin-top:6px">
+<div style="width:164.64px;height:294px;flex:none"><div style="transform:scale(0.98);transform-origin:top left;width:168px;height:300px"><div class="f mob">
+<div class="nv" style="gap:8px;padding:8px 10px"><span>OL</span><span style="margin-left:auto" class="nvi">MENU</span></div>
+<div style="padding:10px;display:flex;flex-direction:column;gap:8px"><div class="hd" style="font-size:17px">Start a project</div>
+<div style="border:2px solid #201e1d;height:24px"></div><div style="border:2px solid #201e1d;height:24px"></div><div style="border:2px solid #201e1d;height:44px"></div>
+<div style="background:#ec3013;color:#fff;font:700 9px Archivo;padding:8px 10px;align-self:flex-start">SEND ↗</div></div>
+</div></div></div>
+<div style="font:400 22px/1.4 Archivo;color:rgba(32,30,29,.55);padding-top:6px">Mobile: form first, availability below</div></div></div><div style="display:flex;flex-direction:column;gap:16px;width:548.8px">
+<div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 24px ui-monospace,Menlo,monospace;background:#201e1d;color:#fff;padding:6px 12px">1r</span><span style="font:400 26px/1.25 Archivo;color:rgba(32,30,29,.72)">Red poster close with booking slot</span></div>
+<div style="width:548.8px;height:392px"><div style="transform:scale(0.98);transform-origin:top left;width:560px;height:400px"><div class="f" style="width:560px;height:400px;background:#ec3013;color:#fff;border-color:#201e1d">
+<div class="nv" style="border-color:#fff;color:#fff"><span>OLHA<br>LAZARIEVA</span><span class="nvi" style="color:rgba(255,255,255,.8)">[ ABOUT ]</span><span class="nvi" style="color:rgba(255,255,255,.8)">[ WORKS ]</span><span class="nvi" style="color:rgba(255,255,255,.8)">[ CONNECT ]</span><span style="margin-left:auto;border-bottom:1px solid #fff">CONTACT ↗</span></div>
+<div style="padding:26px 18px 0"><div class="hd" style="font-size:46px">Book a<br>call</div>
+<div class="b" style="width:52%;height:9px;background:rgba(255,255,255,.55);margin-top:14px"></div>
+<div class="b" style="width:38%;height:9px;background:rgba(255,255,255,.55);margin-top:6px"></div></div>
+<div style="position:absolute;right:18px;top:78px;width:190px;background:#fff;color:#201e1d;border:2px solid #201e1d;padding:12px">
+<span class="tag">CALENDAR EMBED</span>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-top:9px">
+<div style="height:18px;border:1px solid #cfcccb"></div><div style="height:18px;border:1px solid #cfcccb"></div><div style="height:18px;background:#201e1d"></div><div style="height:18px;border:1px solid #cfcccb"></div>
+<div style="height:18px;border:1px solid #cfcccb"></div><div style="height:18px;border:1px solid #cfcccb"></div><div style="height:18px;border:1px solid #cfcccb"></div><div style="height:18px;border:1px solid #cfcccb"></div></div>
+</div>
+<div style="position:absolute;left:0;right:0;bottom:0;border-top:2px solid #fff;padding:11px 18px;font:700 9px Archivo;letter-spacing:.1em;display:flex;justify-content:space-between"><span>HELLO@DOMAIN.COM</span><span>© 2026</span></div>
+</div></div></div>
+<div style="display:flex;gap:20px;align-items:flex-start;margin-top:6px">
+<div style="width:164.64px;height:294px;flex:none"><div style="transform:scale(0.98);transform-origin:top left;width:168px;height:300px"><div class="f mob" style="background:#ec3013;color:#fff">
+<div class="nv" style="gap:8px;padding:8px 10px;border-color:#fff;color:#fff"><span>OL</span><span style="margin-left:auto">MENU</span></div>
+<div style="padding:12px 10px"><div class="hd" style="font-size:28px">Book a<br>call</div></div>
+<div style="margin:0 10px;background:#fff;color:#201e1d;border:2px solid #201e1d;padding:9px"><span class="tag">CALENDAR</span><div style="display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-top:7px"><div style="height:14px;border:1px solid #cfcccb"></div><div style="height:14px;background:#201e1d"></div><div style="height:14px;border:1px solid #cfcccb"></div><div style="height:14px;border:1px solid #cfcccb"></div></div></div>
+</div></div></div>
+<div style="font:400 22px/1.4 Archivo;color:rgba(32,30,29,.55);padding-top:6px">Mobile: poster type, calendar below the fold</div></div></div></div></section>
+<section data-label="Direction B" data-screen-label="Direction B" data-speaker-notes="Direction B follows the collage reference: serif display, cut-outs, pills, tape." style="width:1920px;height:1080px;background:#f0d9e0;color:#201e1d;font-family:Archivo,sans-serif;box-sizing:border-box;overflow:hidden"><div style="height:100%;background:#f0d9e0;padding:96px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between">
+<div style="font:700 26px Archivo;letter-spacing:.2em;color:#7d1f38">DIRECTION B</div>
+<div><div style="font:400 190px/0.9 'Instrument Serif',Georgia,serif;font-style:italic;color:#7d1f38">Editorial<br>collage</div>
+<div style="font:400 40px/1.3 Archivo;margin-top:36px;max-width:1200px;color:rgba(43,42,40,.8)">Serif display over Archivo labels, cut-out photography, stat pills and taped scraps on blush, cream and charcoal grounds.</div></div>
+<div style="font:700 26px Archivo;letter-spacing:.1em;color:#2b2a28">6 WIREFRAMES · ONE PER SCREEN</div></div></section>
+<section data-label="B · Home & About" data-screen-label="B · Home & About" data-speaker-notes="Collage home and the dark journey page." style="width:1920px;height:1080px;background:#f3f2f2;color:#201e1d;font-family:Archivo,sans-serif;box-sizing:border-box;overflow:hidden"><div style="padding:64px 96px 0"><div style="font:700 24px Archivo;letter-spacing:.18em;color:#ec3013">DIRECTION B · HOME & ABOUT</div>
+<div style="display:flex;align-items:flex-end;gap:32px;border-bottom:4px solid #201e1d;padding-bottom:20px;margin-top:14px">
+<div style="font:800 84px/0.9 Archivo;letter-spacing:-.02em;text-transform:uppercase">Home & About</div>
+</div></div><div style="display:flex;gap:180px;padding:12px 96px 0;align-items:flex-start"><div style="display:flex;flex-direction:column;gap:16px;width:560px">
+<div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 24px ui-monospace,Menlo,monospace;background:#201e1d;color:#fff;padding:6px 12px">2a</span><span style="font:400 26px/1.25 Archivo;color:rgba(32,30,29,.72)">Home — name in script, stats floating over a cut-out</span></div>
+<div style="width:560px;height:400px"><div style="transform:scale(1);transform-origin:top left;width:560px;height:400px"><div class="f" style="width:560px;height:400px;background:#f0d9e0;border-color:#2b2a28">
+<div style="display:flex;align-items:center;gap:20px;padding:11px 16px;border-bottom:1px solid #2b2a28"><span class="mono">@OLHA</span><span class="mono">ABOUT</span><span class="mono">WORKS</span><span class="mono">SERVICES</span><span class="mono" style="margin-left:auto">CONTACT ↗</span></div>
+<div style="position:relative;height:calc(100% - 42px)">
+<div class="ser" style="font-size:62px;color:#7d1f38;position:absolute;left:20px;top:16px;z-index:2">Olha</div>
+<div class="ser" style="font-size:62px;color:#7d1f38;position:absolute;right:20px;top:64px;z-index:2">Lazarieva.</div>
+<div class="cut" style="width:120px;height:230px;position:absolute;left:158px;top:8px"></div>
+<div style="position:absolute;left:20px;top:96px;display:flex;gap:6px"><span class="pill">PROJECTS<br>24</span><span class="pill">YEARS<br>8</span><span class="pill">CLIENTS<br>31</span></div>
+<div class="cut" style="width:96px;height:150px;position:absolute;right:26px;bottom:16px;background:#d8d2cd"></div>
+<div style="position:absolute;left:20px;bottom:18px;display:flex;flex-direction:column;gap:6px"><span class="mono">PRODUCT / UX DESIGNER</span><div class="b" style="width:150px;background:#d9bcc6"></div><div class="b" style="width:110px;background:#d9bcc6"></div></div>
+<div class="tape" style="left:186px;top:2px;transform:rotate(-8deg)"></div>
+</div>
+</div></div></div>
+<div style="display:flex;gap:20px;align-items:flex-start;margin-top:6px">
+<div style="width:198.23999999999998px;height:354px;flex:none"><div style="transform:scale(1);transform-origin:top left;width:168px;height:300px"><div class="f mob" style="background:#f0d9e0;border-color:#2b2a28">
+<div style="display:flex;gap:8px;padding:8px 10px;border-bottom:1px solid #2b2a28"><span class="mono">@OLHA</span><span class="mono" style="margin-left:auto">MENU</span></div>
+<div style="padding:10px"><div class="ser" style="font-size:30px;color:#7d1f38">Olha<br>Lazarieva.</div>
+<div class="cut" style="height:96px;margin:10px 0"></div>
+<div style="display:flex;gap:5px"><span class="pill">24</span><span class="pill">8 YRS</span><span class="pill">31</span></div></div>
+</div></div></div>
+<div style="font:400 22px/1.4 Archivo;color:rgba(32,30,29,.55);padding-top:6px">Mobile: name stacks, stats become a scroll row</div></div></div><div style="display:flex;flex-direction:column;gap:16px;width:560px">
+<div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 24px ui-monospace,Menlo,monospace;background:#201e1d;color:#fff;padding:6px 12px">2b</span><span style="font:400 26px/1.25 Archivo;color:rgba(32,30,29,.72)">About — creative journey on a timeline, dark ground</span></div>
+<div style="width:560px;height:400px"><div style="transform:scale(1);transform-origin:top left;width:560px;height:400px"><div class="f" style="width:560px;height:400px;background:#2b2a28;color:#efeae2;border-color:#2b2a28">
+<div style="display:flex;align-items:center;gap:20px;padding:11px 16px;border-bottom:1px solid rgba(239,234,226,.4)"><span class="mono" style="color:rgba(239,234,226,.7)">@OLHA</span><span class="mono" style="color:rgba(239,234,226,.7)">ABOUT</span><span class="mono" style="color:rgba(239,234,226,.7)">WORKS</span><span class="mono" style="margin-left:auto;color:rgba(239,234,226,.7)">CONTACT ↗</span></div>
+<div style="display:flex;gap:20px;padding:14px 18px 0;align-items:flex-end">
+<div class="ser" style="font-size:40px;flex:1">My creative journey</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;padding-bottom:6px"><span class="mono" style="color:#f0d9e0">SHORT BIO</span><div class="b" style="background:#514d49;width:100%"></div><div class="b" style="background:#514d49;width:88%"></div><div class="b" style="background:#514d49;width:64%"></div></div></div>
+<div style="padding:0 18px">
+<div style="height:1px;background:rgba(239,234,226,.5);position:relative;margin:112px 0 0">
+<div style="position:absolute;left:6%;top:-5px;width:9px;height:9px;background:#efeae2"></div>
+<div style="position:absolute;left:36%;top:-5px;width:9px;height:9px;background:#efeae2"></div>
+<div style="position:absolute;left:66%;top:-5px;width:9px;height:9px;background:#f0d9e0"></div>
+<div style="position:absolute;right:0;top:-6px;border-left:11px solid #efeae2;border-top:6px solid transparent;border-bottom:6px solid transparent"></div>
+<div class="cut" style="width:56px;height:70px;position:absolute;left:30%;top:-96px;background:#8d8781"></div>
+<div class="cut" style="width:56px;height:70px;position:absolute;left:62%;top:-96px;background:#8d8781"></div>
+</div>
+<div style="display:flex;gap:14px;margin-top:12px">
+<div style="flex:1"><span class="mono" style="color:#f0d9e0">WHERE I STARTED</span><div class="b" style="background:#514d49;width:90%;margin-top:6px"></div></div>
+<div style="flex:1"><span class="mono" style="color:#f0d9e0">THE STRUGGLE</span><div class="b" style="background:#514d49;width:80%;margin-top:6px"></div></div>
+<div style="flex:1"><span class="mono" style="color:#f0d9e0">TURNING POINT</span><div class="b" style="background:#514d49;width:95%;margin-top:6px"></div></div>
+<div style="flex:1"><span class="mono" style="color:#f0d9e0">WHERE I AM</span><div class="b" style="background:#514d49;width:70%;margin-top:6px"></div></div>
+</div>
+</div>
+<div style="position:absolute;left:18px;bottom:14px" class="ser">personality over polish</div>
+</div></div></div>
+<div style="display:flex;gap:20px;align-items:flex-start;margin-top:6px">
+<div style="width:198.23999999999998px;height:354px;flex:none"><div style="transform:scale(1);transform-origin:top left;width:168px;height:300px"><div class="f mob" style="background:#2b2a28;color:#efeae2;border-color:#2b2a28">
+<div style="display:flex;gap:8px;padding:8px 10px;border-bottom:1px solid rgba(239,234,226,.4)"><span class="mono" style="color:#efeae2">@OLHA</span><span class="mono" style="margin-left:auto;color:#efeae2">MENU</span></div>
+<div style="padding:10px"><div class="ser" style="font-size:24px">My creative journey</div>
+<div style="border-left:1px solid rgba(239,234,226,.5);margin-top:12px;padding-left:10px;display:flex;flex-direction:column;gap:12px">
+<div><span class="mono" style="color:#f0d9e0">STARTED</span><div class="b" style="background:#514d49;width:80%;margin-top:5px"></div></div>
+<div><span class="mono" style="color:#f0d9e0">TURNING POINT</span><div class="b" style="background:#514d49;width:70%;margin-top:5px"></div></div>
+<div><span class="mono" style="color:#f0d9e0">WHERE I AM</span><div class="b" style="background:#514d49;width:60%;margin-top:5px"></div></div></div></div>
+</div></div></div>
+<div style="font:400 22px/1.4 Archivo;color:rgba(32,30,29,.55);padding-top:6px">Mobile: timeline turns vertical</div></div></div></div></section>
+<section data-label="B · Services & Playground" data-screen-label="B · Services & Playground" data-speaker-notes="Numbered tiles and the pinboard." style="width:1920px;height:1080px;background:#f3f2f2;color:#201e1d;font-family:Archivo,sans-serif;box-sizing:border-box;overflow:hidden"><div style="padding:64px 96px 0"><div style="font:700 24px Archivo;letter-spacing:.18em;color:#ec3013">DIRECTION B · SERVICES & PLAYGROUND</div>
+<div style="display:flex;align-items:flex-end;gap:32px;border-bottom:4px solid #201e1d;padding-bottom:20px;margin-top:14px">
+<div style="font:800 84px/0.9 Archivo;letter-spacing:-.02em;text-transform:uppercase">Services & Playground</div>
+</div></div><div style="display:flex;gap:180px;padding:12px 96px 0;align-items:flex-start"><div style="display:flex;flex-direction:column;gap:16px;width:560px">
+<div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 24px ui-monospace,Menlo,monospace;background:#201e1d;color:#fff;padding:6px 12px">2c</span><span style="font:400 26px/1.25 Archivo;color:rgba(32,30,29,.72)">Services — three numbered tiles on cream</span></div>
+<div style="width:560px;height:400px"><div style="transform:scale(1);transform-origin:top left;width:560px;height:400px"><div class="f" style="width:560px;height:400px;background:#efeae2;border-color:#2b2a28">
+<div style="display:flex;align-items:center;gap:20px;padding:11px 16px;border-bottom:1px solid #2b2a28"><span class="mono">@OLHA</span><span class="mono">ABOUT</span><span class="mono">WORKS</span><span class="mono">SERVICES</span><span class="mono" style="margin-left:auto">CONTACT ↗</span></div>
+<div style="display:flex;gap:16px;padding:22px 20px 0">
+<div style="width:46px;height:46px;background:#f0d9e0;display:flex;align-items:center;justify-content:center" class="ser"><span style="font-size:24px;color:#7d1f38">1</span></div>
+<div style="width:46px;height:46px;background:#f0d9e0;display:flex;align-items:center;justify-content:center" class="ser"><span style="font-size:24px;color:#7d1f38">2</span></div>
+<div style="width:46px;height:46px;background:#f0d9e0;display:flex;align-items:center;justify-content:center" class="ser"><span style="font-size:24px;color:#7d1f38">3</span></div>
+</div>
+<div style="display:flex;gap:16px;padding:14px 20px">
+<div style="flex:1;display:flex;flex-direction:column;gap:7px"><div class="ser" style="font-size:22px">Art direction</div><div class="b" style="background:#ddd6cb;width:95%"></div><div class="b" style="background:#ddd6cb;width:80%"></div><div class="b" style="background:#ddd6cb;width:60%"></div></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:7px"><div class="ser" style="font-size:22px">Web design</div><div class="b" style="background:#ddd6cb;width:85%"></div><div class="b" style="background:#ddd6cb;width:92%"></div><div class="b" style="background:#ddd6cb;width:55%"></div></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:7px"><div class="ser" style="font-size:22px">Development</div><div class="b" style="background:#ddd6cb;width:70%"></div><div class="b" style="background:#ddd6cb;width:88%"></div><div class="b" style="background:#ddd6cb;width:64%"></div></div>
+</div>
+<div style="position:absolute;left:0;right:0;bottom:0;background:#2b2a28;color:#efeae2;padding:14px 20px;display:flex;align-items:center;gap:16px">
+<div class="ser" style="font-size:24px">Practical tips:</div><div class="b" style="flex:1;background:#514d49"></div><span class="pill" style="background:#f0d9e0;border-color:#f0d9e0">BOOK ↗</span></div>
+</div></div></div>
+<div style="display:flex;gap:20px;align-items:flex-start;margin-top:6px">
+<div style="width:198.23999999999998px;height:354px;flex:none"><div style="transform:scale(1);transform-origin:top left;width:168px;height:300px"><div class="f mob" style="background:#efeae2;border-color:#2b2a28">
+<div style="display:flex;gap:8px;padding:8px 10px;border-bottom:1px solid #2b2a28"><span class="mono">@OLHA</span><span class="mono" style="margin-left:auto">MENU</span></div>
+<div style="padding:10px;display:flex;flex-direction:column;gap:12px">
+<div><div style="width:32px;height:32px;background:#f0d9e0;display:flex;align-items:center;justify-content:center" class="ser"><span style="font-size:17px;color:#7d1f38">1</span></div><div class="ser" style="font-size:17px;margin-top:5px">Art direction</div><div class="b" style="background:#ddd6cb;width:85%;margin-top:5px"></div></div>
+<div><div style="width:32px;height:32px;background:#f0d9e0;display:flex;align-items:center;justify-content:center" class="ser"><span style="font-size:17px;color:#7d1f38">2</span></div><div class="ser" style="font-size:17px;margin-top:5px">Web design</div></div></div>
+</div></div></div>
+<div style="font:400 22px/1.4 Archivo;color:rgba(32,30,29,.55);padding-top:6px">Mobile: tiles stack, dark band pins to bottom</div></div></div><div style="display:flex;flex-direction:column;gap:16px;width:560px">
+<div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 24px ui-monospace,Menlo,monospace;background:#201e1d;color:#fff;padding:6px 12px">2d</span><span style="font:400 26px/1.25 Archivo;color:rgba(32,30,29,.72)">Playground — pinboard of cut-outs and tape</span></div>
+<div style="width:560px;height:400px"><div style="transform:scale(1);transform-origin:top left;width:560px;height:400px"><div class="f" style="width:560px;height:400px;background:#f0d9e0;border-color:#2b2a28">
+<div style="display:flex;align-items:center;gap:20px;padding:11px 16px;border-bottom:1px solid #2b2a28"><span class="mono">@OLHA</span><span class="mono">ABOUT</span><span class="mono">PLAYGROUND</span><span class="mono" style="margin-left:auto">CONTACT ↗</span></div>
+<div style="padding:14px 18px 0;display:flex;align-items:baseline;gap:10px"><div class="ser" style="font-size:34px">Playground</div><span class="mono">48 SCRAPS</span></div>
+<div style="position:relative;height:250px">
+<div class="cut" style="width:130px;height:96px;position:absolute;left:22px;top:14px;transform:rotate(-3deg);background:#fff;border:1px solid #2b2a28"></div>
+<div class="tape" style="left:70px;top:8px;transform:rotate(-6deg)"></div>
+<div class="cut" style="width:150px;height:110px;position:absolute;left:172px;top:36px;transform:rotate(2deg)"></div>
+<div class="tape" style="left:230px;top:30px;transform:rotate(4deg)"></div>
+<div class="cut" style="width:120px;height:150px;position:absolute;right:28px;top:10px;transform:rotate(-2deg);background:#d8d2cd"></div>
+<div class="cut" style="width:110px;height:74px;position:absolute;left:60px;top:130px;transform:rotate(3deg);background:#fff;border:1px solid #2b2a28"></div>
+<div class="cut" style="width:140px;height:70px;position:absolute;left:210px;top:162px;transform:rotate(-4deg)"></div>
+<div class="ser" style="position:absolute;right:34px;bottom:22px;font-size:20px;color:#7d1f38">drag me around</div>
+</div>
+</div></div></div>
+<div style="display:flex;gap:20px;align-items:flex-start;margin-top:6px">
+<div style="width:198.23999999999998px;height:354px;flex:none"><div style="transform:scale(1);transform-origin:top left;width:168px;height:300px"><div class="f mob" style="background:#f0d9e0;border-color:#2b2a28">
+<div style="display:flex;gap:8px;padding:8px 10px;border-bottom:1px solid #2b2a28"><span class="mono">@OLHA</span><span class="mono" style="margin-left:auto">MENU</span></div>
+<div style="padding:10px"><div class="ser" style="font-size:22px">Playground</div>
+<div class="cut" style="height:70px;margin-top:10px;transform:rotate(-2deg);background:#fff;border:1px solid #2b2a28"></div>
+<div class="cut" style="height:70px;margin-top:14px;transform:rotate(2deg)"></div>
+<div class="cut" style="height:50px;margin-top:14px;background:#d8d2cd"></div></div>
+</div></div></div>
+<div style="font:400 22px/1.4 Archivo;color:rgba(32,30,29,.55);padding-top:6px">Mobile: scraps stack in a loose column</div></div></div></div></section>
+<section data-label="B · Journal & Contact" data-screen-label="B · Journal & Contact" data-speaker-notes="Magazine cover story and the invitation card." style="width:1920px;height:1080px;background:#f3f2f2;color:#201e1d;font-family:Archivo,sans-serif;box-sizing:border-box;overflow:hidden"><div style="padding:64px 96px 0"><div style="font:700 24px Archivo;letter-spacing:.18em;color:#ec3013">DIRECTION B · JOURNAL & CONTACT</div>
+<div style="display:flex;align-items:flex-end;gap:32px;border-bottom:4px solid #201e1d;padding-bottom:20px;margin-top:14px">
+<div style="font:800 84px/0.9 Archivo;letter-spacing:-.02em;text-transform:uppercase">Journal & Contact</div>
+</div></div><div style="display:flex;gap:180px;padding:12px 96px 0;align-items:flex-start"><div style="display:flex;flex-direction:column;gap:16px;width:560px">
+<div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 24px ui-monospace,Menlo,monospace;background:#201e1d;color:#fff;padding:6px 12px">2e</span><span style="font:400 26px/1.25 Archivo;color:rgba(32,30,29,.72)">Journal — magazine cover story + notes</span></div>
+<div style="width:560px;height:400px"><div style="transform:scale(1);transform-origin:top left;width:560px;height:400px"><div class="f" style="width:560px;height:400px;background:#efeae2;border-color:#2b2a28">
+<div style="display:flex;align-items:center;gap:20px;padding:11px 16px;border-bottom:1px solid #2b2a28"><span class="mono">@OLHA</span><span class="mono">ABOUT</span><span class="mono">JOURNAL</span><span class="mono" style="margin-left:auto">CONTACT ↗</span></div>
+<div style="display:flex;gap:18px;padding:16px 18px">
+<div style="flex:1.2"><span class="mono">FEATURED · 2026.04</span>
+<div class="ser" style="font-size:34px;margin-top:6px">How to build a portfolio <span style="color:#7d1f38">that actually lands</span></div>
+<div class="b" style="background:#ddd6cb;width:92%;margin-top:12px"></div><div class="b" style="background:#ddd6cb;width:78%;margin-top:6px"></div>
+<span class="pill" style="margin-top:12px">READ ↗</span></div>
+<div style="width:170px;position:relative"><div class="cut" style="width:150px;height:118px;transform:rotate(2deg);background:#fff;border:1px solid #2b2a28"></div><div class="tape" style="left:56px;top:-6px;transform:rotate(-7deg)"></div>
+<div class="cut" style="width:120px;height:80px;margin-top:14px;margin-left:24px;transform:rotate(-3deg)"></div></div>
+</div>
+<div style="position:absolute;left:0;right:0;bottom:0;border-top:1px solid #2b2a28;display:flex">
+<div style="flex:1;padding:11px 14px;border-right:1px solid #2b2a28"><span class="mono">2026.02</span><div class="b" style="background:#ddd6cb;width:85%;margin-top:6px"></div></div>
+<div style="flex:1;padding:11px 14px;border-right:1px solid #2b2a28"><span class="mono">2025.11</span><div class="b" style="background:#ddd6cb;width:70%;margin-top:6px"></div></div>
+<div style="flex:1;padding:11px 14px"><span class="mono">2025.09</span><div class="b" style="background:#ddd6cb;width:90%;margin-top:6px"></div></div>
+</div>
+</div></div></div>
+<div style="display:flex;gap:20px;align-items:flex-start;margin-top:6px">
+<div style="width:198.23999999999998px;height:354px;flex:none"><div style="transform:scale(1);transform-origin:top left;width:168px;height:300px"><div class="f mob" style="background:#efeae2;border-color:#2b2a28">
+<div style="display:flex;gap:8px;padding:8px 10px;border-bottom:1px solid #2b2a28"><span class="mono">@OLHA</span><span class="mono" style="margin-left:auto">MENU</span></div>
+<div style="padding:10px"><span class="mono">FEATURED</span><div class="ser" style="font-size:20px;margin-top:4px">How to build a portfolio <span style="color:#7d1f38">that lands</span></div>
+<div class="cut" style="height:70px;margin-top:10px;background:#fff;border:1px solid #2b2a28"></div></div>
+<div style="border-top:1px solid #2b2a28;padding:8px 10px"><span class="mono">2026.02</span><div class="b" style="background:#ddd6cb;width:80%;margin-top:5px"></div></div>
+</div></div></div>
+<div style="font:400 22px/1.4 Archivo;color:rgba(32,30,29,.55);padding-top:6px">Mobile: cover story, then dated rows</div></div></div><div style="display:flex;flex-direction:column;gap:16px;width:560px">
+<div style="display:flex;align-items:baseline;gap:14px"><span style="font:700 24px ui-monospace,Menlo,monospace;background:#201e1d;color:#fff;padding:6px 12px">2f</span><span style="font:400 26px/1.25 Archivo;color:rgba(32,30,29,.72)">Contact — invitation card with channel rows</span></div>
+<div style="width:560px;height:400px"><div style="transform:scale(1);transform-origin:top left;width:560px;height:400px"><div class="f" style="width:560px;height:400px;background:#f0d9e0;border-color:#2b2a28">
+<div style="display:flex;align-items:center;gap:20px;padding:11px 16px;border-bottom:1px solid #2b2a28"><span class="mono">@OLHA</span><span class="mono">ABOUT</span><span class="mono">WORKS</span><span class="mono" style="margin-left:auto">CONTACT ↗</span></div>
+<div style="display:flex;gap:18px;padding:26px 20px 0">
+<div style="flex:1"><div class="ser" style="font-size:40px">Join the<br>creatives'<br><span style="color:#7d1f38">community</span></div>
+<div style="margin-top:16px;display:flex;flex-direction:column;gap:7px">
+<div style="display:flex;align-items:center;gap:8px"><div style="width:16px;height:16px;border:1px solid #2b2a28"></div><span class="mono">INSTAGRAM</span></div>
+<div style="display:flex;align-items:center;gap:8px"><div style="width:16px;height:16px;border:1px solid #2b2a28"></div><span class="mono">LINKEDIN</span></div>
+<div style="display:flex;align-items:center;gap:8px"><div style="width:16px;height:16px;border:1px solid #2b2a28"></div><span class="mono">HELLO@DOMAIN.COM</span></div>
+</div></div>
+<div style="width:210px;display:flex;gap:10px">
+<div class="cut" style="width:96px;height:200px;background:#fff;border:1px solid #2b2a28"></div>
+<div class="cut" style="width:96px;height:200px;background:#fff;border:1px solid #2b2a28;margin-top:16px"></div>
+</div>
+</div>
+<div style="position:absolute;left:20px;bottom:16px;display:flex;gap:6px"><span class="pill">SAY HI ↗</span><span class="pill" style="background:#2b2a28;color:#efeae2;border-color:#2b2a28">BOOK A CALL</span></div>
+</div></div></div>
+<div style="display:flex;gap:20px;align-items:flex-start;margin-top:6px">
+<div style="width:198.23999999999998px;height:354px;flex:none"><div style="transform:scale(1);transform-origin:top left;width:168px;height:300px"><div class="f mob" style="background:#f0d9e0;border-color:#2b2a28">
+<div style="display:flex;gap:8px;padding:8px 10px;border-bottom:1px solid #2b2a28"><span class="mono">@OLHA</span><span class="mono" style="margin-left:auto">MENU</span></div>
+<div style="padding:10px"><div class="ser" style="font-size:24px">Join the creatives' <span style="color:#7d1f38">community</span></div>
+<div style="margin-top:10px;display:flex;flex-direction:column;gap:6px"><span class="mono">INSTAGRAM</span><span class="mono">LINKEDIN</span><span class="mono">HELLO@DOMAIN.COM</span></div></div>
+<div style="position:absolute;left:0;right:0;bottom:0;border-top:1px solid #2b2a28;padding:8px 10px;background:#2b2a28"><span class="pill" style="background:#f0d9e0;border-color:#f0d9e0">BOOK A CALL</span></div>
+</div></div></div>
+<div style="font:400 22px/1.4 Archivo;color:rgba(32,30,29,.55);padding-top:6px">Mobile: card, channel rows, sticky CTA</div></div></div></div></section>
+<section data-label="How to choose" data-screen-label="How to choose" data-speaker-notes="Pick a direction, then we build the chosen screens at full fidelity." style="width:1920px;height:1080px;background:#f3f2f2;color:#201e1d;font-family:Archivo,sans-serif;box-sizing:border-box;overflow:hidden"><div style="padding:64px 96px 0"><div style="font:700 24px Archivo;letter-spacing:.18em;color:#ec3013">NEXT</div>
+<div style="display:flex;align-items:flex-end;gap:32px;border-bottom:4px solid #201e1d;padding-bottom:20px;margin-top:14px">
+<div style="font:800 84px/0.9 Archivo;letter-spacing:-.02em;text-transform:uppercase">How to choose</div>
+</div></div>
+<div style="display:flex;gap:0;margin:56px 96px 0;border-top:2px solid #201e1d">
+<div style="flex:1;padding:40px;border-right:2px solid #201e1d;padding-left:0"><div style="font:700 24px ui-monospace,Menlo,monospace;color:#ec3013">DIRECTION A</div><div style="font:800 56px Archivo;text-transform:uppercase;margin-top:14px">Modernist grid</div><div style="font:400 30px/1.4 Archivo;margin-top:20px;max-width:640px">Reads as a studio. Confident, fast to build, works with dense case studies. Risk: familiar in the design-portfolio space.</div></div><div style="flex:1;padding:40px;"><div style="font:700 24px ui-monospace,Menlo,monospace;color:#ec3013">DIRECTION B</div><div style="font:800 56px Archivo;text-transform:uppercase;margin-top:14px">Editorial collage</div><div style="font:400 30px/1.4 Archivo;margin-top:20px;max-width:640px">Reads as a person. Memorable, warmer, good for writing and community. Risk: needs real cut-out imagery to work.</div></div>
+</div>
+<div style="position:absolute;left:96px;bottom:80px;font:400 30px Archivo;color:rgba(32,30,29,.65)">Next: pick a direction (or a mix), then two screens go to full fidelity.</div></section>
+</x-import>
+</x-dc>
+<script data-dc-script type="text/plain"></script>
+</body>
+</html>

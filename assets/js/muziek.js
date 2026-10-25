@@ -5,7 +5,7 @@
 (function () {
   // ===== Instellingen =====
   const CONFIG = {
-    bestand: 'uploads/sound/871796__josefpres__piano-loops-213-octave-down-long-loop-120-bpm.wav',
+    bestand: 'assets/audio/piano-loop-josefpres.wav',
     volume: 0.35,             // eindvolume (0–1)
     fadeTijd: 1.2,            // in- en uitfaden in seconden
     balkBreedte: 5,           // breedte van een streep in px
